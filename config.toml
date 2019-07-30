@@ -11,6 +11,8 @@ theme = "hugo-tourmaline"
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
 
+publishDir = "natverse.github.io"
+
 relativeurls = false
 languageCode = "en-us"
 description = "An opinionated collection of R packages designed for data science."
