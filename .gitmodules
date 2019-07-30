@@ -1,0 +1,3 @@
+[submodule "natverse.github.io"]
+	path = natverse.github.io
+	url = git@github.com:natverse/natverse.github.io.git
