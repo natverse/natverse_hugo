@@ -1,4 +1,6 @@
-# natverse.github.io
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f348e1d-3d86-46f8-b933-9623f2569436/deploy-status)](https://app.netlify.com/sites/natverse/deploys)
+
+# natverse.netlify.com
 
 This repo is the source of <https://natverse.netlify.com/>, and this readme tells you 
 how it all works. 
