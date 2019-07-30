@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Upcoming Events on Natverse</title>
-    <link>/events/</link>
+    <link>https://natverse.github.io/events/</link>
     <description>Recent content in Upcoming Events on Natverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>en-us</copyright>
     <lastBuildDate>27017-12-12 10:00:09 -2000 CST</lastBuildDate>
     
-        <atom:link href="/events/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://natverse.github.io/events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>rstudio::conf 2020</title>
-      <link>/events/rstudio-conf-2020/</link>
+      <link>https://natverse.github.io/events/rstudio-conf-2020/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/events/rstudio-conf-2020/</guid>
+      <guid>https://natverse.github.io/events/rstudio-conf-2020/</guid>
       <description>rstudio::conf 2020 covers all things RStudio, including workshops to teach you the tidyverse, and talks to show you the latest and greatest features.</description>
       <content>&lt;p&gt;rstudio::conf 2020 covers all things RStudio, including workshops to teach you the tidyverse, and talks to show you the latest and greatest features.&lt;/p&gt;
 </content>

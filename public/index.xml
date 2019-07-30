@@ -1,31 +1,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
   <title>Natverse</title>
-  <link>/</link>
+  <link>https://natverse.github.io/</link>
   <description>Recent content on Natverse</description>
   <generator>Hugo -- gohugo.io</generator>
 <language>en-us</language>
 <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
 
-<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://natverse.github.io/index.xml" rel="self" type="application/rss+xml" />
 
 
 <item>
   <title>rstudio::conf 2020</title>
-  <link>/events/rstudio-conf-2020/</link>
+  <link>https://natverse.github.io/events/rstudio-conf-2020/</link>
   <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
   
-<guid>/events/rstudio-conf-2020/</guid>
+<guid>https://natverse.github.io/events/rstudio-conf-2020/</guid>
   <description>&lt;p&gt;rstudio::conf 2020 covers all things RStudio, including workshops to teach you the tidyverse, and talks to show you the latest and greatest features.&lt;/p&gt;
 </description>
   </item>
   
 <item>
   <title>stringr 1.4.0</title>
-  <link>/news/2019/02/stringr-1-4-0/</link>
+  <link>https://natverse.github.io/news/2019/02/stringr-1-4-0/</link>
   <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
   
-<guid>/news/2019/02/stringr-1-4-0/</guid>
+<guid>https://natverse.github.io/news/2019/02/stringr-1-4-0/</guid>
   <description>
 
 &lt;p&gt;&lt;html&gt;
@@ -84,10 +84,10 @@ str_ends(fruit, &amp;quot;e&amp;quot;, negate = TRUE)
   
 <item>
   <title>Hello R Markdown</title>
-  <link>/post/2015-07-23-r-rmarkdown/</link>
+  <link>https://natverse.github.io/post/2015-07-23-r-rmarkdown/</link>
   <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
   
-<guid>/post/2015-07-23-r-rmarkdown/</guid>
+<guid>https://natverse.github.io/post/2015-07-23-r-rmarkdown/</guid>
   <description>
 
 
@@ -124,7 +124,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://natverse.github.io/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
@@ -135,10 +135,10 @@ Figure 1: A fancy pie chart.
   
 <item>
   <title>Contribute to the tidyverse</title>
-  <link>/contribute/</link>
+  <link>https://natverse.github.io/contribute/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/contribute/</guid>
+<guid>https://natverse.github.io/contribute/</guid>
   <description>
 
 &lt;p&gt;The tidyverse would not be possible without the contributions of the R community. No matter your current skills, it&amp;rsquo;s possible to contribute back to the tidyverse.&lt;/p&gt;
@@ -147,13 +147,13 @@ Figure 1: A fancy pie chart.
 
 &lt;p&gt;The easiest way to help out is to answer questions. You won&amp;rsquo;t know the answer to everything, but that&amp;rsquo;s ok! Even just the acknowledgement that someone cares enough to try can be tremendously encouraging.&lt;/p&gt;
 
-&lt;p&gt;Many people asking for help, don&amp;rsquo;t know about reprexes. A little education, and some help crafting a &lt;a href=&#34;/help#reprex&#34;&gt;reprex&lt;/a&gt; can go a long way. You might not answer the question, but you&amp;rsquo;ll help someone answer it more easily.&lt;/p&gt;
+&lt;p&gt;Many people asking for help, don&amp;rsquo;t know about reprexes. A little education, and some help crafting a &lt;a href=&#34;https://natverse.github.io/help#reprex&#34;&gt;reprex&lt;/a&gt; can go a long way. You might not answer the question, but you&amp;rsquo;ll help someone answer it more easily.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re interested in answering questions, some good places to start are the &lt;a href=&#34;https://community.rstudio.com/&#34; target=&#34;_blank&#34;&gt;RStudio community site&lt;/a&gt;, or the tidyverse tags on &lt;a href=&#34;https://twitter.com/search?q=%23tidyverse&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://stackoverflow.com/questions/tagged/tidyverse?sort=newest&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt;. Just remember that while you might have seen the problem a hundred times before, it&amp;rsquo;s new to the person asking it. Be patient, polite, and empathic.&lt;/p&gt;
 
 &lt;h2 id=&#34;issues&#34;&gt;File issues&lt;/h2&gt;
 
-&lt;p&gt;If you&amp;rsquo;ve found a bug, first create a minimal &lt;a href=&#34;/help#reprex&#34;&gt;reprex&lt;/a&gt;. Spend some time trying to make it as minimal as possible: the more time you spend doing this, the easier it will be for the tidyverse team to fix it. Then file it on the GitHub repo of the appropriate package.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve found a bug, first create a minimal &lt;a href=&#34;https://natverse.github.io/help#reprex&#34;&gt;reprex&lt;/a&gt;. Spend some time trying to make it as minimal as possible: the more time you spend doing this, the easier it will be for the tidyverse team to fix it. Then file it on the GitHub repo of the appropriate package.&lt;/p&gt;
 
 &lt;p&gt;To be as efficient as possible, development of tidyverse packages tends to be very bursty. Nothing happens for a long time, until a sufficient quantity of issues accumulates. Then there&amp;rsquo;s a burst of intense activity as we focus our efforts. That makes development more efficient because it avoids expensive context switching between problems. This process makes a good reprex particularly important because it might be multiple months between your initial report and when we start working on it. If you can&amp;rsquo;t reproduce the bug, we can&amp;rsquo;t fix it!&lt;/p&gt;
 
@@ -171,10 +171,10 @@ Figure 1: A fancy pie chart.
   
 <item>
   <title>Get help!</title>
-  <link>/help/</link>
+  <link>https://natverse.github.io/help/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/help/</guid>
+<guid>https://natverse.github.io/help/</guid>
   <description>
 
 &lt;blockquote&gt;
@@ -193,7 +193,7 @@ Figure 1: A fancy pie chart.
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;First, you need to make your code reproducible. This means that you need
-to capture everything, i.e., include any &lt;code&gt;library()&lt;/code&gt; calls and create all necessary objects. The easiest way to make sure you&amp;rsquo;ve done this is to use the &lt;a href=&#34;/help#reprex-pkg&#34;&gt;reprex package&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+to capture everything, i.e., include any &lt;code&gt;library()&lt;/code&gt; calls and create all necessary objects. The easiest way to make sure you&amp;rsquo;ve done this is to use the &lt;a href=&#34;https://natverse.github.io/help#reprex-pkg&#34;&gt;reprex package&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Second, you need to make it minimal. Strip away everything that is not directly related to your problem. This usually involves creating a much smaller and simpler R object than the one you&amp;rsquo;re facing in real life or even using built-in data.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -265,27 +265,27 @@ and tidyverse so that the right people are more likely to see it.&lt;/p&gt;&lt;/
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/a&gt;. It&amp;rsquo;s hard to share your reprex only on twitter, because 140 characters are rarely enough and screenshots don&amp;rsquo;t help others play with your code. But twitter is a great place to share a link to your reprex that&amp;rsquo;s hosted elsewhere. The &lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#rstats twitter&lt;/a&gt; community is extremely friendly and active, and is a great crowd to be a part of. Make sure you tag your tweet with #rstats and #tidyverse.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;If you think you&amp;rsquo;ve found a &lt;strong&gt;bug&lt;/strong&gt;, please follow the instructions on
-&lt;a href=&#34;/contribute#issues&#34;&gt;contributing to the tidyverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;a href=&#34;https://natverse.github.io/contribute#issues&#34;&gt;contributing to the tidyverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
   </item>
   
 <item>
   <title>Learn the natverse</title>
-  <link>/home/band_two/</link>
+  <link>https://natverse.github.io/home/band_two/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/home/band_two/</guid>
+<guid>https://natverse.github.io/home/band_two/</guid>
   <description>&lt;p&gt;See how the natverse makes analysing neuroanatomical data easier with R. Read it &lt;a href=&#34;link to paper&#34; target=&#34;_blank&#34;&gt;online&lt;/a&gt;, or try another &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;resource&lt;/a&gt; from the community.&lt;/p&gt;
 </description>
   </item>
   
 <item>
   <title>Learn the tidyverse</title>
-  <link>/learn/</link>
+  <link>https://natverse.github.io/learn/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/learn/</guid>
+<guid>https://natverse.github.io/learn/</guid>
   <description>
 
 &lt;p&gt;&lt;a href=&#34;http://amzn.to/2aHLAQ1&#34;&gt;&lt;img class=&#34;bookCover&#34; style=&#34;width:200px&#34; src=&#34;../images/cover.png&#34; width=&#34;80&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -399,10 +399,10 @@ that lead up to the creation of the tidyverse.&lt;/li&gt;
   
 <item>
   <title>Natverse packages</title>
-  <link>/packages/</link>
+  <link>https://natverse.github.io/packages/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/packages/</guid>
+<guid>https://natverse.github.io/packages/</guid>
   <description>
 
 &lt;h2 id=&#34;installation-and-use&#34;&gt;Installation and use&lt;/h2&gt;
@@ -425,7 +425,7 @@ in your current R session.&lt;/p&gt;&lt;/li&gt;
 
 &lt;div class=&#34;packages&#34;&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-ggplot2.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-ggplot2.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details. &lt;a href=&#34;http://ggplot2.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
@@ -433,28 +433,28 @@ in your current R session.&lt;/p&gt;&lt;/li&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-dplyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-dplyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/&#34;&gt;dplyr&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;dplyr provides a grammar of data manipulation, providing a consistent set of verbs that solve the most common data manipulation challenges. &lt;a href=&#34;http://dplyr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-tidyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-tidyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://tidyr.tidyverse.org/&#34;&gt;tidyr&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;tidyr provides a set of functions that help you get to tidy data. Tidy data is data with a consistent form: in brief, every variable goes in a column, and every column is a variable. &lt;a href=&#34;http://tidyr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-readr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-readr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://readr.tidyverse.org/&#34;&gt;readr&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;readr provides a fast and friendly way to read rectangular data (like csv, tsv, and fwf). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. &lt;a href=&#34;http://readr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-purrr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-purrr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://purrr.tidyverse.org/&#34;&gt;purrr&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;purrr enhances R’s functional programming (FP) toolkit by providing a complete and consistent set of tools for working with functions and vectors. Once you master the basic concepts, purrr allows you to replace many for loops with code that is easier to write and more expressive.
@@ -462,7 +462,7 @@ in your current R session.&lt;/p&gt;&lt;/li&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-tibble.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-tibble.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://tibble.tidyverse.org/&#34;&gt;tibble&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;tibble is a modern re-imagining of the data frame, keeping what time has proven to be effective, and throwing out what it has not. Tibbles are data.frames that are lazy and surly: they do less and complain more forcing you to confront problems earlier, typically leading to cleaner, more expressive code.
@@ -470,7 +470,7 @@ in your current R session.&lt;/p&gt;&lt;/li&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-stringr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-stringr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://stringr.tidyverse.org/&#34;&gt;stringr&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;stringr provides a cohesive set of functions designed to make working with strings as easy as possible. It is built on top of stringi, which uses the ICU C library to provide fast, correct implementations of common string manipulations.
@@ -478,7 +478,7 @@ in your current R session.&lt;/p&gt;&lt;/li&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;package&#34;&gt;
-    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-forcats.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;https://natverse.github.io/images/hex-forcats.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
     &lt;div class=&#34;package-info&#34;&gt;
       &lt;h3&gt;&lt;a href=&#34;http://forcats.tidyverse.org/&#34;&gt;forcats&lt;/a&gt;&lt;/h3&gt;
       &lt;p&gt;forcats provides a suite of useful tools that solve common problems with factors. R uses factors to handle categorical variables, variables that have a fixed and known set of possible values.
@@ -554,20 +554,20 @@ piping operators (like &lt;code&gt;%$%&lt;/code&gt; and &lt;code&gt;%&amp;lt;&am
   
 <item>
   <title>Need help?</title>
-  <link>/home/band_three/</link>
+  <link>https://natverse.github.io/home/band_three/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/home/band_three/</guid>
-  <description>&lt;p&gt;First learn how to make a &lt;a href=&#34;/help/#reprex&#34;&gt;reprex&lt;/a&gt; then &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;share it&lt;/a&gt; with others.&lt;/p&gt;
+<guid>https://natverse.github.io/home/band_three/</guid>
+  <description>&lt;p&gt;First learn how to make a &lt;a href=&#34;https://natverse.github.io/help/#reprex&#34;&gt;reprex&lt;/a&gt; then &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;share it&lt;/a&gt; with others.&lt;/p&gt;
 </description>
   </item>
   
 <item>
   <title>R packages for neuroanatomical data</title>
-  <link>/home/band_one/</link>
+  <link>https://natverse.github.io/home/band_one/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
-<guid>/home/band_one/</guid>
+<guid>https://natverse.github.io/home/band_one/</guid>
   <description>&lt;p&gt;The natverse is a collection of R packages designed for analysing neuroanatomical data. All packages help users import, analyse and visualise neuroanatomical data across species ranging from fruit-flies to mice.&lt;/p&gt;
 
 &lt;p&gt;Install the complete natverse with:&lt;/p&gt;

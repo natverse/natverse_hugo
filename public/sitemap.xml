@@ -3,123 +3,123 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://natverse.github.io/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/events/</loc>
+    <loc>https://natverse.github.io/events/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/events/rstudio-conf-2020/</loc>
+    <loc>https://natverse.github.io/events/rstudio-conf-2020/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/alison/</loc>
+    <loc>https://natverse.github.io/author/alison/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/author/</loc>
-    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/news/</loc>
-    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/learn/</loc>
+    <loc>https://natverse.github.io/categories/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/author/mara-averick/</loc>
+    <loc>https://natverse.github.io/author/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/news/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/categories/learn/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/author/mine/</loc>
+    <loc>https://natverse.github.io/author/mara-averick/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/news/2019/02/stringr-1-4-0/</loc>
+    <loc>https://natverse.github.io/author/mine/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/news/2019/02/stringr-1-4-0/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/frida-gomam/</loc>
+    <loc>https://natverse.github.io/author/frida-gomam/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://natverse.github.io/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
+    <loc>https://natverse.github.io/post/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/contribute/</loc>
-  </url>
-  
-  <url>
-    <loc>/help/</loc>
-  </url>
-  
-  <url>
-    <loc>/home/</loc>
+    <loc>https://natverse.github.io/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/home/band_two/</loc>
+    <loc>https://natverse.github.io/contribute/</loc>
   </url>
   
   <url>
-    <loc>/learn/</loc>
+    <loc>https://natverse.github.io/help/</loc>
   </url>
   
   <url>
-    <loc>/packages/</loc>
+    <loc>https://natverse.github.io/home/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/home/band_three/</loc>
+    <loc>https://natverse.github.io/home/band_two/</loc>
   </url>
   
   <url>
-    <loc>/events/archive/</loc>
+    <loc>https://natverse.github.io/learn/</loc>
   </url>
   
   <url>
-    <loc>/home/band_one/</loc>
+    <loc>https://natverse.github.io/packages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/home/band_three/</loc>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/events/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://natverse.github.io/home/band_one/</loc>
   </url>
   
 </urlset>

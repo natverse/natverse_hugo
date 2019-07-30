@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Past Events on Natverse</title>
-    <link>/events/archive/</link>
+    <link>https://natverse.github.io/events/archive/</link>
     <description>Recent content in Past Events on Natverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>en-us</copyright>
     
-        <atom:link href="/events/archive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://natverse.github.io/events/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

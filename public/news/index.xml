@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Natverse</title>
-    <link>/news/</link>
+    <link>https://natverse.github.io/news/</link>
     <description>Recent content in News on Natverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>en-us</copyright>
     <lastBuildDate>21027-12-12 20:00:09 -1900 CST</lastBuildDate>
     
-        <atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://natverse.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>stringr 1.4.0</title>
-      <link>/news/2019/02/stringr-1-4-0/</link>
+      <link>https://natverse.github.io/news/2019/02/stringr-1-4-0/</link>
       <pubDate>12 Mar 27 20:00 +0000</pubDate>
       
-      <guid>/news/2019/02/stringr-1-4-0/</guid>
+      <guid>https://natverse.github.io/news/2019/02/stringr-1-4-0/</guid>
       <description>h2 code { font-size: 1em;
 }  
 We are happy to announce that stringr 1.4.0 is now on CRAN. stringr provides a cohesive set of functions designed to make working with strings as easy as possible. For a full list of changes, please see the release notes.

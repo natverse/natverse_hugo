@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
   <title>mara Averick on Natverse</title>
-  <link>/author/mara-averick/</link>
+  <link>https://natverse.github.io/author/mara-averick/</link>
   <description>Recent content in mara Averick on Natverse</description>
   <generator>Hugo -- gohugo.io</generator>
 <language>en-us</language>
 <lastBuildDate>Thu, 21 Feb 2019 00:00:00 +0000</lastBuildDate>
 
-<atom:link href="/author/mara-averick/index.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://natverse.github.io/author/mara-averick/index.xml" rel="self" type="application/rss+xml" />
 
 
 <item>
   <title>stringr 1.4.0</title>
-  <link>/news/2019/02/stringr-1-4-0/</link>
+  <link>https://natverse.github.io/news/2019/02/stringr-1-4-0/</link>
   <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
   
-<guid>/news/2019/02/stringr-1-4-0/</guid>
+<guid>https://natverse.github.io/news/2019/02/stringr-1-4-0/</guid>
   <description>
 
 &lt;p&gt;&lt;html&gt;

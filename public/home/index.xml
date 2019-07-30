@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Natverse</title>
-    <link>/home/</link>
+    <link>https://natverse.github.io/home/</link>
     <description>Recent content in Homes on Natverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>en-us</copyright>
     
-        <atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://natverse.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learn the natverse</title>
-      <link>/home/band_two/</link>
+      <link>https://natverse.github.io/home/band_two/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/home/band_two/</guid>
+      <guid>https://natverse.github.io/home/band_two/</guid>
       <description>See how the natverse makes analysing neuroanatomical data easier with R. Read it online, or try another resource from the community.</description>
       <content>&lt;p&gt;See how the natverse makes analysing neuroanatomical data easier with R. Read it &lt;a href=&#34;link to paper&#34; target=&#34;_blank&#34;&gt;online&lt;/a&gt;, or try another &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;resource&lt;/a&gt; from the community.&lt;/p&gt;
 </content>
@@ -22,21 +22,21 @@
     
     <item>
       <title>Need help?</title>
-      <link>/home/band_three/</link>
+      <link>https://natverse.github.io/home/band_three/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/home/band_three/</guid>
+      <guid>https://natverse.github.io/home/band_three/</guid>
       <description>First learn how to make a reprex then share it with others.</description>
-      <content>&lt;p&gt;First learn how to make a &lt;a href=&#34;/help/#reprex&#34;&gt;reprex&lt;/a&gt; then &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;share it&lt;/a&gt; with others.&lt;/p&gt;
+      <content>&lt;p&gt;First learn how to make a &lt;a href=&#34;https://natverse.github.io/help/#reprex&#34;&gt;reprex&lt;/a&gt; then &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;share it&lt;/a&gt; with others.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>R packages for neuroanatomical data</title>
-      <link>/home/band_one/</link>
+      <link>https://natverse.github.io/home/band_one/</link>
       <pubDate>12 Mar 17 10:00 +0000</pubDate>
       
-      <guid>/home/band_one/</guid>
+      <guid>https://natverse.github.io/home/band_one/</guid>
       <description>The natverse is a collection of R packages designed for analysing neuroanatomical data. All packages help users import, analyse and visualise neuroanatomical data across species ranging from fruit-flies to mice.
 Install the complete natverse with:
 devtools::install_github(&amp;quot;natverse/natverse&amp;quot;)  </description>
