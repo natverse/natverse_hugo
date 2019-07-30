@@ -1,0 +1,581 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+  <title>Natverse</title>
+  <link>/</link>
+  <description>Recent content on Natverse</description>
+  <generator>Hugo -- gohugo.io</generator>
+<language>en-us</language>
+<lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
+
+<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+
+
+<item>
+  <title>rstudio::conf 2020</title>
+  <link>/events/rstudio-conf-2020/</link>
+  <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+  
+<guid>/events/rstudio-conf-2020/</guid>
+  <description>&lt;p&gt;rstudio::conf 2020 covers all things RStudio, including workshops to teach you the tidyverse, and talks to show you the latest and greatest features.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>stringr 1.4.0</title>
+  <link>/news/2019/02/stringr-1-4-0/</link>
+  <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+  
+<guid>/news/2019/02/stringr-1-4-0/</guid>
+  <description>
+
+&lt;p&gt;&lt;html&gt;
+&lt;style&gt;
+h2 code {
+    font-size: 1em;&lt;/p&gt;
+
+&lt;p&gt;}
+&lt;/style&gt;
+&lt;/html&gt;&lt;/p&gt;
+
+&lt;p&gt;We are happy to announce that &lt;a href=&#34;http://stringr.tidyverse.org/&#34; target=&#34;_blank&#34;&gt;stringr&lt;/a&gt; 1.4.0
+is now on CRAN. stringr provides a cohesive set of functions designed to make
+working with strings as easy as possible. For a full list of changes, please see the &lt;a href=&#34;https://stringr.tidyverse.org/news/index.html#stringr-1-4-0&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can install the released version from CRAN:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;stringr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(stringr)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;new-functions&#34;&gt;New functions&lt;/h2&gt;
+
+&lt;p&gt;Thanks to the hard work of &lt;a href=&#34;https://github.com/jonthegeek&#34; target=&#34;_blank&#34;&gt;John Harmon&lt;/a&gt; at &lt;a href=&#34;https://github.com/tidyverse/dev-day-2019&#34; target=&#34;_blank&#34;&gt;Tidyverse Developer Day&lt;/a&gt;, stringr has three new functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://stringr.tidyverse.org/reference/str_starts.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_starts()&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://stringr.tidyverse.org/reference/str_starts.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_ends()&lt;/code&gt;&lt;/a&gt; detect the presence or absence of patterns at the beginning or end of strings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;fruit &amp;lt;- c(&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;pear&amp;quot;, &amp;quot;pineapple&amp;quot;)
+str_starts(fruit, &amp;quot;p&amp;quot;)
+#&amp;gt; [1] FALSE FALSE  TRUE  TRUE
+str_starts(fruit, &amp;quot;p&amp;quot;, negate = TRUE)
+#&amp;gt; [1]  TRUE  TRUE FALSE FALSE
+str_ends(fruit, &amp;quot;e&amp;quot;)
+#&amp;gt; [1]  TRUE FALSE FALSE  TRUE
+str_ends(fruit, &amp;quot;e&amp;quot;, negate = TRUE)
+#&amp;gt; [1] FALSE  TRUE  TRUE FALSE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The new &lt;a href=&#34;https://stringr.tidyverse.org/reference/case.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_to_sentence()&lt;/code&gt;&lt;/a&gt; function capitalizes strings with sentence case, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_to_sentence(&amp;quot;the quick brown dog&amp;quot;)
+#&amp;gt; [1] &amp;quot;The quick brown dog&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;support-for-negate&#34;&gt;Support for &lt;code&gt;negate&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://stringr.tidyverse.org/reference/str_subset.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_subset()&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/reference/str_detect.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_detect()&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&#34;https://stringr.tidyverse.org/reference/str_subset.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;str_which()&lt;/code&gt;&lt;/a&gt; now have the &lt;code&gt;negate&lt;/code&gt; argument, which is used to find the elements that do &lt;em&gt;not&lt;/em&gt; match a pattern (as seen above in the &lt;code&gt;str_starts()&lt;/code&gt; and &lt;code&gt;str_ends()&lt;/code&gt; examples).&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Thank you to everyone who contributed to this release: &lt;a href=&#34;https://github.com/AmeliaMN&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;AmeliaMN&lt;/a&gt;, &lt;a href=&#34;https://github.com/batpigandme&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;batpigandme&lt;/a&gt;, &lt;a href=&#34;https://github.com/beckymaust&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;beckymaust&lt;/a&gt;, &lt;a href=&#34;https://github.com/BenjaminLouis&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;BenjaminLouis&lt;/a&gt;, &lt;a href=&#34;https://github.com/blablablerg&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;blablablerg&lt;/a&gt;, &lt;a href=&#34;https://github.com/bschneidr&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;bschneidr&lt;/a&gt;, &lt;a href=&#34;https://github.com/bwiernik&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;bwiernik&lt;/a&gt;, &lt;a href=&#34;https://github.com/ctmann&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;ctmann&lt;/a&gt;, &lt;a href=&#34;https://github.com/damianooldoni&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;damianooldoni&lt;/a&gt;, &lt;a href=&#34;https://github.com/dan-reznik&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;dan-reznik&lt;/a&gt;, &lt;a href=&#34;https://github.com/denrou&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;denrou&lt;/a&gt;, &lt;a href=&#34;https://github.com/diegogarcilazo&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;diegogarcilazo&lt;/a&gt;, &lt;a href=&#34;https://github.com/DieselAnalytics&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;DieselAnalytics&lt;/a&gt;, &lt;a href=&#34;https://github.com/elisakreiss&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;elisakreiss&lt;/a&gt;, &lt;a href=&#34;https://github.com/giovannikraushaar&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;giovannikraushaar&lt;/a&gt;, &lt;a href=&#34;https://github.com/hadley&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;hadley&lt;/a&gt;, &lt;a href=&#34;https://github.com/hammer&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;hammer&lt;/a&gt;, &lt;a href=&#34;https://github.com/jennybc&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;jennybc&lt;/a&gt;, &lt;a href=&#34;https://github.com/jimhester&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;jimhester&lt;/a&gt;, &lt;a href=&#34;https://github.com/jonocarroll&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;jonocarroll&lt;/a&gt;, &lt;a href=&#34;https://github.com/jonthegeek&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;jonthegeek&lt;/a&gt;, &lt;a href=&#34;https://github.com/jrnold&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;jrnold&lt;/a&gt;, &lt;a href=&#34;https://github.com/juanrocha&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;juanrocha&lt;/a&gt;, &lt;a href=&#34;https://github.com/kmace&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;kmace&lt;/a&gt;, &lt;a href=&#34;https://github.com/krlmlr&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;krlmlr&lt;/a&gt;, &lt;a href=&#34;https://github.com/osorensen&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;osorensen&lt;/a&gt;, &lt;a href=&#34;https://github.com/paleolimbot&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;paleolimbot&lt;/a&gt;, &lt;a href=&#34;https://github.com/pdelboca&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;pdelboca&lt;/a&gt;, &lt;a href=&#34;https://github.com/pgrandinetti&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;pgrandinetti&lt;/a&gt;, &lt;a href=&#34;https://github.com/PirateGrunt&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;PirateGrunt&lt;/a&gt;, &lt;a href=&#34;https://github.com/samhinshaw&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;samhinshaw&lt;/a&gt;, &lt;a href=&#34;https://github.com/sastoudt&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;sastoudt&lt;/a&gt;, &lt;a href=&#34;https://github.com/seanpor&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;seanpor&lt;/a&gt;, &lt;a href=&#34;https://github.com/yj-danielyang&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;yj-danielyang&lt;/a&gt;, and &lt;a href=&#34;https://github.com/yutannihilation&#34; target=&#34;_blank&#34;&gt;&amp;#x0040;yutannihilation&lt;/a&gt;.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Hello R Markdown</title>
+  <link>/post/2015-07-23-r-rmarkdown/</link>
+  <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+  
+<guid>/post/2015-07-23-r-rmarkdown/</guid>
+  <description>
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Contribute to the tidyverse</title>
+  <link>/contribute/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/contribute/</guid>
+  <description>
+
+&lt;p&gt;The tidyverse would not be possible without the contributions of the R community. No matter your current skills, it&amp;rsquo;s possible to contribute back to the tidyverse.&lt;/p&gt;
+
+&lt;h2 id=&#34;answers&#34;&gt;Answer questions&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to help out is to answer questions. You won&amp;rsquo;t know the answer to everything, but that&amp;rsquo;s ok! Even just the acknowledgement that someone cares enough to try can be tremendously encouraging.&lt;/p&gt;
+
+&lt;p&gt;Many people asking for help, don&amp;rsquo;t know about reprexes. A little education, and some help crafting a &lt;a href=&#34;/help#reprex&#34;&gt;reprex&lt;/a&gt; can go a long way. You might not answer the question, but you&amp;rsquo;ll help someone answer it more easily.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in answering questions, some good places to start are the &lt;a href=&#34;https://community.rstudio.com/&#34; target=&#34;_blank&#34;&gt;RStudio community site&lt;/a&gt;, or the tidyverse tags on &lt;a href=&#34;https://twitter.com/search?q=%23tidyverse&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://stackoverflow.com/questions/tagged/tidyverse?sort=newest&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt;. Just remember that while you might have seen the problem a hundred times before, it&amp;rsquo;s new to the person asking it. Be patient, polite, and empathic.&lt;/p&gt;
+
+&lt;h2 id=&#34;issues&#34;&gt;File issues&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve found a bug, first create a minimal &lt;a href=&#34;/help#reprex&#34;&gt;reprex&lt;/a&gt;. Spend some time trying to make it as minimal as possible: the more time you spend doing this, the easier it will be for the tidyverse team to fix it. Then file it on the GitHub repo of the appropriate package.&lt;/p&gt;
+
+&lt;p&gt;To be as efficient as possible, development of tidyverse packages tends to be very bursty. Nothing happens for a long time, until a sufficient quantity of issues accumulates. Then there&amp;rsquo;s a burst of intense activity as we focus our efforts. That makes development more efficient because it avoids expensive context switching between problems. This process makes a good reprex particularly important because it might be multiple months between your initial report and when we start working on it. If you can&amp;rsquo;t reproduce the bug, we can&amp;rsquo;t fix it!&lt;/p&gt;
+
+&lt;h2 id=&#34;contribute-documentation&#34;&gt;Contribute documentation&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a bit more experienced with the tidyverse and are looking to improve your open source development skills, the next step up is to contribute a pull request to a tidyverse package. The most important thing to know is that tidyverse packages use &lt;a href=&#34;https://github.com/klutometis/roxygen&#34; target=&#34;_blank&#34;&gt;roxygen2&lt;/a&gt;: this means that documentation is found in the R code close to the source of each function. There are some special tags, but most tidyverse packages now use markdown in the documentation which makes it particularly easy to get started.&lt;/p&gt;
+
+&lt;h2 id=&#34;contribute-code&#34;&gt;Contribute code&lt;/h2&gt;
+
+&lt;p&gt;If you are a more experienced programmer, you might want to help out with the package development. Before you do a pull request, you should always file an issue and make sure someone from the tidyverse team agrees that it&amp;rsquo;s a problem, and is happy with your basic proposal for fixing it. We don&amp;rsquo;t want you to spend a bunch of time on something that we don&amp;rsquo;t think is a good idea.&lt;/p&gt;
+
+&lt;p&gt;Also make sure to read the &lt;a href=&#34;http://style.tidyverse.org/&#34; target=&#34;_blank&#34;&gt;tidyverse style guide&lt;/a&gt; which will make sure that your new code and documentation matches the existing style. This makes the review process much smoother.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Get help!</title>
+  <link>/help/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/help/</guid>
+  <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;In space, no one can hear you scream.&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; &lt;cite&gt;Alien (1979)&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Luckily the tidyverse is a friendlier place. Ease of adoption and ease of use are fundamental design principles for the packages in the tidyverse. If you are banging your head in frustration, here&amp;rsquo;s how you can help us help you.&lt;/p&gt;
+
+&lt;h2 id=&#34;reprex&#34;&gt;Make a reprex&lt;/h2&gt;
+
+&lt;p&gt;If you need help getting unstuck, the first step is to create a &lt;strong&gt;reprex&lt;/strong&gt;, or reproducible example. The goal of a reprex is to package your problematic code in such a way that other people can run it and feel your pain. Then, hopefully, they can provide a solution and put you out of your misery.&lt;/p&gt;
+
+&lt;p&gt;There are two parts to creating a reprex:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;First, you need to make your code reproducible. This means that you need
+to capture everything, i.e., include any &lt;code&gt;library()&lt;/code&gt; calls and create all necessary objects. The easiest way to make sure you&amp;rsquo;ve done this is to use the &lt;a href=&#34;/help#reprex-pkg&#34;&gt;reprex package&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Second, you need to make it minimal. Strip away everything that is not directly related to your problem. This usually involves creating a much smaller and simpler R object than the one you&amp;rsquo;re facing in real life or even using built-in data.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That sounds like a lot of work!  And it can be, but it has a great payoff:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;80% of the time creating an excellent reprex reveals the source of your problem. It&amp;rsquo;s amazing how often the process of writing up a self-contained and minimal example allows you to answer your own question.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The other 20% of time you will have captured the essence of your problem in
+a way that is easy for others to play with. This substantially improves
+your chances of getting help!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;reprex-pkg&#34;&gt;The reprex package&lt;/h2&gt;
+
+&lt;p&gt;When creating a reprex by hand, it&amp;rsquo;s easy to accidentally miss something that means your code can&amp;rsquo;t be run on someone else&amp;rsquo;s computer. Avoid this problem by using the &lt;a href=&#34;http://reprex.tidyverse.org&#34; target=&#34;_blank&#34;&gt;reprex package&lt;/a&gt;. It&amp;rsquo;s installed as part of the tidyverse &lt;em&gt;(will be true soon)&lt;/em&gt; or you can install it by itself. Go ahead and load it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;## pick one:
+##   install.packages(&amp;quot;tidyverse&amp;quot;) &amp;lt;-- will work soon
+##   install.packages(&amp;quot;reprex&amp;quot;)    &amp;lt;-- works today
+
+library(reprex)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Write a bit of code and copy it to the clipboard:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;(y &amp;lt;- 1:4)
+mean(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Enter &lt;code&gt;reprex()&lt;/code&gt; in the R Console. In RStudio, you&amp;rsquo;ll see a preview of your rendered reprex.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;(y &amp;lt;- 1:4)
+#&amp;gt; [1] 1 2 3 4
+mean(y)
+#&amp;gt; [1] 2.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is now ready and waiting on your clipboard, so you can paste it into, say, a GitHub issue. In RStudio, you can access reprex from the &lt;a href=&#34;https://rstudio.github.io/rstudioaddins/&#34; target=&#34;_blank&#34;&gt;addins menu&lt;/a&gt;, which makes it even easier to point out your code and select the output format.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;reprex-addins-menu.png&#34; alt=&#34;reprex addins menu&#34;&gt;&lt;/img&gt;
+&lt;img src=&#34;reprex-addin.png&#34; alt=&#34;reprex addin interface&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;In either case, you can eventually &lt;a href=&#34;http://reprex.tidyverse.org&#34; target=&#34;_blank&#34;&gt;explore other features&lt;/a&gt;, such as formatting output for Stack Overflow or as a commented R script. reprex even uploads figures so you can easily ask questions about ggplot2.&lt;/p&gt;
+
+&lt;p&gt;If your code is not self-contained, running &lt;code&gt;reprex()&lt;/code&gt; results in an error. It may feel like tough love, but this way you can get your story straight in private. The reprex format also strongly encourages you to find the minimal dataset necessary to show your problem. Creating an effective reprex is a learned skill and the immediate feedback from reprex makes this very concrete.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-ask&#34;&gt;Where to ask&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;help-is-on-the-way.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; height=&#34;200&#34; align=&#34;right&#34; style=&#34;padding:1em;&#34; /&gt;
+&lt;!-- Thanks to Mark Hansen for the image! https://twitter.com/cocteau/status/893811714420088832 --&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;ve made a reprex that you can easily inflict on others, you need to share it in an appropriate forum. Here are some options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://community.rstudio.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;community.rstudio.com&lt;/strong&gt;&lt;/a&gt;: This is a warm
+and welcoming place to ask any questions you might have about the
+tidyverse (and you can also ask questions about shiny and RStudio there
+too!)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Stack Overflow&lt;/strong&gt;&lt;/a&gt;. You&amp;rsquo;re probably already familiar
+with Stack Overflow from googling: it&amp;rsquo;s a frequent source of answers to
+coding related questions. Asking a question on Stack Overflow can be
+intimidating, but if you&amp;rsquo;ve taken the time to create a reprex, you&amp;rsquo;re much
+more likely to get a useful answer. Make sure to &lt;a href=&#34;https://stackoverflow.com/help/tagging&#34; target=&#34;_blank&#34;&gt;tag your question&lt;/a&gt; with R
+and tidyverse so that the right people are more likely to see it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/a&gt;. It&amp;rsquo;s hard to share your reprex only on twitter, because 140 characters are rarely enough and screenshots don&amp;rsquo;t help others play with your code. But twitter is a great place to share a link to your reprex that&amp;rsquo;s hosted elsewhere. The &lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#rstats twitter&lt;/a&gt; community is extremely friendly and active, and is a great crowd to be a part of. Make sure you tag your tweet with #rstats and #tidyverse.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you think you&amp;rsquo;ve found a &lt;strong&gt;bug&lt;/strong&gt;, please follow the instructions on
+&lt;a href=&#34;/contribute#issues&#34;&gt;contributing to the tidyverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Learn the natverse</title>
+  <link>/home/band_two/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_two/</guid>
+  <description>&lt;p&gt;See how the natverse makes analysing neuroanatomical data easier with R. Read it &lt;a href=&#34;link to paper&#34; target=&#34;_blank&#34;&gt;online&lt;/a&gt;, or try another &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;resource&lt;/a&gt; from the community.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Learn the tidyverse</title>
+  <link>/learn/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/learn/</guid>
+  <description>
+
+&lt;p&gt;&lt;a href=&#34;http://amzn.to/2aHLAQ1&#34;&gt;&lt;img class=&#34;bookCover&#34; style=&#34;width:200px&#34; src=&#34;../images/cover.png&#34; width=&#34;80&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 class=&#39;noTrickPadding&#39; id=&#39;r4ds&#39;&gt;R for data science&lt;/h2&gt;
+
+&lt;p&gt;The best place to start learning the tidyverse is &lt;a href=&#34;http://r4ds.had.co.nz&#34; target=&#34;_blank&#34;&gt;R for Data Science&lt;/a&gt; (R4DS for short), an O&amp;rsquo;Reilly book written by Hadley Wickham and Garrett Grolemund. It&amp;rsquo;s designed to take you from knowing nothing about R or the tidyverse to having all the basic tools of data science at your fingertips. You can read it online for free, or &lt;a href=&#34;http://amzn.to/2aHLAQ1&#34; target=&#34;_blank&#34;&gt;buy a physical copy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We highly recommend pairing R4DS with the &lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34; target=&#34;_blank&#34;&gt;RStudio cheatsheets&lt;/a&gt;. These cheatsheets have been carefully designed to pack a lot of information into a small amount of space. You can keep them handy at your desk and quickly jog your memory when you get stuck. Most of the cheatsheets have been translated into multiple languages.&lt;/p&gt;
+
+&lt;p&gt;(&lt;em&gt;Do you have a book you&amp;rsquo;d like to see listed here? Please submit a &lt;a href=&#34;https://github.com/tidyverse/tidyverse.org/edit/master/content/learn.md&#34; target=&#34;_blank&#34;&gt;pull request&lt;/a&gt;!&lt;/em&gt;)&lt;/p&gt;
+
+&lt;h2 class=&#39;stopFloatBefore&#39; id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://moderndive.com/&#34; target=&#34;_blank&#34;&gt;ModernDive: An Introduction to Statistical and Data Sciences via R&lt;/a&gt; by
+Chester Ismay and Albert Y. Kim. &amp;ldquo;Help! I’m new to R and RStudio and I need to learn them! What do I do?&amp;rdquo; If you&amp;rsquo;re asking yourself this, this book is for you.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://amzn.to/2tYdTqd&#34; target=&#34;_blank&#34;&gt;ggplot2: elegant graphics for data science&lt;/a&gt; by
+Hadley Wickham. Goes into greater depth into the ggplot2 visualisation
+system.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://jrnold.github.io/r4ds-exercise-solutions/&#34; target=&#34;_blank&#34;&gt;Solutions and notes for R4DS&lt;/a&gt;
+by Jeffrey B. Arnold. Work in progress.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://geni.us/datamanipulationir&#34; target=&#34;_blank&#34;&gt;Data Manipulation in R&lt;/a&gt; by Steph Locke. Covers data manipulation in a tidyverse way.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;datacamp&#34;&gt;DataCamp&lt;/h2&gt;
+
+&lt;p&gt;DataCamp is an excellent way to improve your R skills, including the tidyverse. A great place to start is the &lt;a href=&#34;https://www.datacamp.com/tracks/tidyverse-fundamentals&#34; target=&#34;_blank&#34;&gt;Tidyverse Fundamentals with R&lt;/a&gt; skill track that walks users through many of the packages in the tidyverse in a sequence of five courses.&lt;/p&gt;
+
+&lt;p&gt;Take a look at &lt;a href=&#34;https://www.datacamp.com/tidyverse-tutorials?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;all tidyverse courses&lt;/a&gt; or see selected favourites below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/courses/writing-functions-in-r?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;Writing functions in R&lt;/a&gt;
+by Hadley and Charlotte Wickham, hosted on DataCamp. This course will teach you the fundamentals
+of writing functions in R so that, among other things, you can make your code
+more readable, avoid coding errors, and automate repetitive tasks.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/courses/introduction-to-the-tidyverse?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;Introduction to the tidyverse&lt;/a&gt; by David Robinson, hosted on DataCamp. This is an introduction to the dplyr and ggplot2 packages through exploration and visualization of country data over time. This is a suitable course for people who have no or limited experience in R and are interested in learning to perform data analysis.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/courses/data-visualization-with-ggplot2-1?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;Data visualisation with ggplot2&lt;/a&gt; by
+Rick Scavetta, hosted on DataCamp. Covers the basics of ggplot2. Followed by &lt;a href=&#34;https://www.datacamp.com/courses/data-visualization-with-ggplot2-2?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;part 2&lt;/a&gt;
+which covers more advanced topics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/courses/exploratory-data-analysis-in-r-case-study?tap_a=5644-dce66f&amp;amp;tap_s=213362-c9f98c&#34; target=&#34;_blank&#34;&gt;Exploratory data analysis in R: case study&lt;/a&gt; by David Robinson, hosted on DataCamp. This course brings ggplot2 and dplyr into action in an in-depth analysis of United Nations voting data. The course also introduces broom for tidying model output and the tidyr package for wrangling data into an explorable shape.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;workshops&#34;&gt;Workshops&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jumpingrivers.com/courses/22_r-tidyverse&#34; target=&#34;_blank&#34;&gt;Mastering the Tidyverse&lt;/a&gt; by Jumping Rivers. A one day crash course covering tidyverse fundamentals. The course is a mixture of lectures, short exercises and longer tutorial questions. During the day, we&amp;rsquo;ll cover dplyr, tidy data, tibbles, dates/times and string manipulation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itsalocke.com/courses/intro-to-r/&#34; target=&#34;_blank&#34;&gt;Introduction to R&lt;/a&gt; by Locke Data. A two day course covering data manipulation and reporting fundamentals using the tidyverse, rmarkdown, and shiny. The course blends lectures, exercises, and practicals over two days to cover the 80% of work that almost everyone needs to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;university-courses&#34;&gt;University courses&lt;/h2&gt;
+
+&lt;h3 id=&#34;2017&#34;&gt;2017&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dcl-2017-04.github.io/curriculum/upcoming.html&#34; target=&#34;_blank&#34;&gt;Data Challenge Lab&lt;/a&gt;.
+Stanford University; Hadley Wickham and Bill Behrman. This is a 5-unit
+course using a flipped classroom. The curriculum is designed to cover
+each main thread of R4DS multiple times, diving a little deeper at
+each pass.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.drhector.org/course/m-sc-industrial-analysis-an-international-perspective/&#34; target=&#34;_blank&#34;&gt;M.Sc. Industrial Analysis: An International Perspective&lt;/a&gt;. HEC Montreal; Thierry Warin. Graduate program in Data Science for International Business (DS4IB), where students learn how to use RStudio, RMarkdown, the tidyverse and open data in a reproducible research workflow. Hosted at &lt;a href=&#34;http://drhector.org&#34; target=&#34;_blank&#34;&gt;Dr.HECtoR&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www2.stat.duke.edu/courses/Fall17/sta112.01/&#34; target=&#34;_blank&#34;&gt;Better Living with Data Science&lt;/a&gt;.
+Duke University; Mine Cetinkaya-Rundel. Data Science course for first year undergraduates
+with little to no computing background. Combines techniques from statistics, math, computer
+science, and social sciences, to learn how to use data to understand natural phenomena,
+explore patterns, model outcomes, and make predictions. Data wrangling, exploratory data
+analysis, predictive modeling, data visualization, and effective communication of results.
+Discussions around reproducibility, data sharing, data privacy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www2.stat.duke.edu/~cr173/Sta523_Fa17/&#34; target=&#34;_blank&#34;&gt;Statistical Computing&lt;/a&gt; Duke University;
+Colin Rundel. MS level statistical computing course focusing on Best practices and software
+development for reproducible results, selecting topics from: use of markup languages,
+understanding data structures, design of graphics, object oriented programming,
+vectorized code, scoping, documenting code, profiling and debugging, building modular
+code, and version control-all in contexts of specific applied statistical analyses.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nbs.ntu.edu.sg/Programmes/Graduate/MScFE/Documents/Website%20MFE%20Course%20Details_2017.pdf&#34; target=&#34;_blank&#34;&gt;FE8828 Programming Web Applications in Finance&lt;/a&gt; Nanyang Technological University; Dr. Yang Ye
+Master for Financial Engineering. An intermediate-to-advanced level programming course in R for data analytics
+and interactive content via web. It teaches R Markdown, Shiny, Tidyverse (dplyr/tidyr/ggplot2/lubridate).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cfss.uchicago.edu/&#34; target=&#34;_blank&#34;&gt;Computing for the Social Sciences&lt;/a&gt; University of Chicago; Benjamin Soltoff. This is an applied course for social scientists with little-to-no programming experience who wish to harness growing digital and computational resources. The focus of the course is on generating reproducible research through the use of programming languages and version control software. Major emphasis is placed on a pragmatic understanding of core principles of programming and packaged implementations of methods. Students will leave the course with basic computational skills implemented through many computational methods and approaches to social science; while students will not become expert programmers, they will gain the knowledge of how to adapt and expand these skills as they are presented with new questions, methods, and data.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.elon.edu/u/academics/communications/academics/media-analytics-major/&#34; target=&#34;_blank&#34;&gt;Applied Media Analytics&lt;/a&gt; Elon University; Brian Walsh. An Undergraduate introduction to R programming for Media Analytics majors. Students learn ggplot2, dplyr, and lubridate, as well as basic sentiment analysis, Twitter insights, and Google Analytics.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2016&#34;&gt;2016&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stat545.com&#34; target=&#34;_blank&#34;&gt;Stat545&lt;/a&gt;; UBC; Jenny Bryan. Data wrangling,
+exploration, and analysis with R
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2012&#34;&gt;2012&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stat405.had.co.nz&#34; target=&#34;_blank&#34;&gt;Stat405&lt;/a&gt;; Hadley Wickham, Rice University.
+Mainly included for historical interest - you can see some of the work
+that lead up to the creation of the tidyverse.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Natverse packages</title>
+  <link>/packages/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/packages/</guid>
+  <description>
+
+&lt;h2 id=&#34;installation-and-use&#34;&gt;Installation and use&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Install all the packages in the natverse by running &lt;code&gt;devtools::install_github(&amp;quot;natverse/natverse&amp;quot;)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Run &lt;code&gt;library(natverse)&lt;/code&gt; to load the core natverse and make it available
+in your current R session.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more about the natverse package at &lt;a href=&#34;https://natverse.github.io/&#34; target=&#34;_blank&#34;&gt;https://natverse.github.io/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;package-section&#34;&gt;
+
+&lt;div class=&#34;package-section-info&#34;&gt;
+  &lt;h2 id=&#34;core-natverse&#34;&gt;Core natverse&lt;/h2&gt;
+  &lt;p&gt;The core natverse includes the packages that you&#39;re likely to use in analysis of neuroanatomical data. As of natverse 1.0.0, the following packages are included in the core natverse:&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;packages&#34;&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-ggplot2.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details. &lt;a href=&#34;http://ggplot2.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-dplyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/&#34;&gt;dplyr&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;dplyr provides a grammar of data manipulation, providing a consistent set of verbs that solve the most common data manipulation challenges. &lt;a href=&#34;http://dplyr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-tidyr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://tidyr.tidyverse.org/&#34;&gt;tidyr&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;tidyr provides a set of functions that help you get to tidy data. Tidy data is data with a consistent form: in brief, every variable goes in a column, and every column is a variable. &lt;a href=&#34;http://tidyr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-readr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://readr.tidyverse.org/&#34;&gt;readr&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;readr provides a fast and friendly way to read rectangular data (like csv, tsv, and fwf). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. &lt;a href=&#34;http://readr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-purrr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://purrr.tidyverse.org/&#34;&gt;purrr&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;purrr enhances R’s functional programming (FP) toolkit by providing a complete and consistent set of tools for working with functions and vectors. Once you master the basic concepts, purrr allows you to replace many for loops with code that is easier to write and more expressive.
+      &lt;a href=&#34;http://purrr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-tibble.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://tibble.tidyverse.org/&#34;&gt;tibble&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;tibble is a modern re-imagining of the data frame, keeping what time has proven to be effective, and throwing out what it has not. Tibbles are data.frames that are lazy and surly: they do less and complain more forcing you to confront problems earlier, typically leading to cleaner, more expressive code.
+      &lt;a href=&#34;http://tibble.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-stringr.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://stringr.tidyverse.org/&#34;&gt;stringr&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;stringr provides a cohesive set of functions designed to make working with strings as easy as possible. It is built on top of stringi, which uses the ICU C library to provide fast, correct implementations of common string manipulations.
+      &lt;a href=&#34;http://stringr.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;package&#34;&gt;
+    &lt;img class=&#34;package-image&#34; src=&#34;/images/hex-forcats.png&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+    &lt;div class=&#34;package-info&#34;&gt;
+      &lt;h3&gt;&lt;a href=&#34;http://forcats.tidyverse.org/&#34;&gt;forcats&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;forcats provides a suite of useful tools that solve common problems with factors. R uses factors to handle categorical variables, variables that have a fixed and known set of possible values.
+      &lt;a href=&#34;http://forcats.tidyverse.org/&#34; aria-hidden=&#34;true&#34;&gt;Learn more ...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with &lt;code&gt;library(tidyverse)&lt;/code&gt;, so you&amp;rsquo;ll need to load each one with its own call to &lt;code&gt;library()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
+
+&lt;p&gt;As well as &lt;a href=&#34;http://readr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;readr&lt;/a&gt;, for reading flat files, the tidyverse includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://readxl.tidyverse.org&#34; target=&#34;_blank&#34;&gt;readxl&lt;/a&gt; for &lt;code&gt;.xls&lt;/code&gt; and &lt;code&gt;.xlsx&lt;/code&gt; sheets.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haven.tidyverse.org&#34; target=&#34;_blank&#34;&gt;haven&lt;/a&gt; for SPSS, Stata, and SAS data.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are a handful of other packages that are not in the tidyverse, but are tidyverse-adjacent. They are very useful for importing data from other sources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jeroen/jsonlite#jsonlite&#34; target=&#34;_blank&#34;&gt;jsonlite&lt;/a&gt; for JSON.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/r-lib/xml2&#34; target=&#34;_blank&#34;&gt;xml2&lt;/a&gt; for XML.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/r-lib/httr&#34; target=&#34;_blank&#34;&gt;httr&lt;/a&gt; for web APIs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/hadley/rvest&#34; target=&#34;_blank&#34;&gt;rvest&lt;/a&gt; for web scraping.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstats-db/DBI&#34; target=&#34;_blank&#34;&gt;DBI&lt;/a&gt; for relational databases.
+To connect to a specific database, you&amp;rsquo;ll need to pair DBI with a specific
+backend like RSQLite, RPostgres, or odbc. Learn more at
+&lt;a href=&#34;http://db.rstudio.com&#34; target=&#34;_blank&#34;&gt;http://db.rstudio.com&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;wrangle&#34;&gt;Wrangle&lt;/h2&gt;
+
+&lt;p&gt;In addition to &lt;a href=&#34;http://tidyr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;tidyr&lt;/a&gt;, and &lt;a href=&#34;http://dplyr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;dplyr&lt;/a&gt;, there are five packages (including &lt;a href=&#34;http://stringr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;stringr&lt;/a&gt; and &lt;a href=&#34;http://forcats.tidyverse.org&#34; target=&#34;_blank&#34;&gt;forcats&lt;/a&gt;) which are designed to work with specific types of data:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://lubridate.tidyverse.org&#34; target=&#34;_blank&#34;&gt;lubridate&lt;/a&gt; for dates and date-times.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tidyverse/hms&#34; target=&#34;_blank&#34;&gt;hms&lt;/a&gt; for time-of-day values.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tidyverse/blob&#34; target=&#34;_blank&#34;&gt;blob&lt;/a&gt; for storing blob (binary) data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;program&#34;&gt;Program&lt;/h2&gt;
+
+&lt;p&gt;In addition to &lt;a href=&#34;http://purrr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;purrr&lt;/a&gt;, which provides very consistent and natural methods for iterating on R objects, there are two additional tidyverse packages that help with general programming challenges:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://magrittr.tidyverse.org&#34; target=&#34;_blank&#34;&gt;magrittr&lt;/a&gt; provides the pipe, &lt;code&gt;%&amp;gt;%&lt;/code&gt; used
+throughout the tidyverse. It also provide a number of more specialised
+piping operators (like &lt;code&gt;%$%&lt;/code&gt; and &lt;code&gt;%&amp;lt;&amp;gt;%&lt;/code&gt;) that can be useful in other places.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tidyverse/glue&#34; target=&#34;_blank&#34;&gt;glue&lt;/a&gt; provides an alternative to
+&lt;code&gt;paste()&lt;/code&gt; that makes it easier to combine data and strings.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+
+&lt;p&gt;Modelling within the tidyverse is largely a work in progress. You can see some of the pieces in the &lt;a href=&#34;http://github.com/topepo/recipes&#34; target=&#34;_blank&#34;&gt;recipes&lt;/a&gt; and &lt;a href=&#34;http://github.com/topepo/rsample&#34; target=&#34;_blank&#34;&gt;rsample&lt;/a&gt; packages but we do not yet have a cohesive system that solves a wide range of challenges. This work will largely replace the &lt;a href=&#34;https://github.com/tidyverse/modelr&#34; target=&#34;_blank&#34;&gt;modelr&lt;/a&gt; package used in &lt;a href=&#34;http://r4ds.had.co.nz/&#34; target=&#34;_blank&#34;&gt;R4DS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You may also find &lt;a href=&#34;https://github.com/tidyverse/broom&#34; target=&#34;_blank&#34;&gt;broom&lt;/a&gt; to be useful: it turns models into tidy data which you can then wrangle and visualise using the tools you already know.&lt;/p&gt;
+
+&lt;h2 id=&#34;get-help&#34;&gt;Get help&lt;/h2&gt;
+
+&lt;p&gt;If you’re asking for R help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the &lt;a href=&#34;http://reprex.tidyverse.org/&#34; target=&#34;_blank&#34;&gt;reprex&lt;/a&gt; package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the &lt;a href=&#34;https://www.tidyverse.org/help/&#34; target=&#34;_blank&#34;&gt;help section&lt;/a&gt;.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Need help?</title>
+  <link>/home/band_three/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_three/</guid>
+  <description>&lt;p&gt;First learn how to make a &lt;a href=&#34;/help/#reprex&#34;&gt;reprex&lt;/a&gt; then &lt;a href=&#34;https://groups.google.com/forum/#!forum/nat-user&#34; target=&#34;_blank&#34;&gt;share it&lt;/a&gt; with others.&lt;/p&gt;
+</description>
+  </item>
+  
+<item>
+  <title>R packages for neuroanatomical data</title>
+  <link>/home/band_one/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_one/</guid>
+  <description>&lt;p&gt;The natverse is a collection of R packages designed for analysing neuroanatomical data. All packages help users import, analyse and visualise neuroanatomical data across species ranging from fruit-flies to mice.&lt;/p&gt;
+
+&lt;p&gt;Install the complete natverse with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;devtools::install_github(&amp;quot;natverse/natverse&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+  </item>
+  
+</channel>
+  </rss>
