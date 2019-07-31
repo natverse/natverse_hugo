@@ -1,0 +1,25 @@
+git:
+  depth: false
+env:
+  global:
+  - HUGO_VERSION="0.54.0"
+  matrix:
+  - YOUR_ENCRYPTED_VARIABLE
+  - secure: KPfj7Z67wil8NVDiOSofbRF74NUImArJu3WtWKFXvoiVd959wAOGghSVH4b6ZQRsipJi5uWTSN8ypoQ/50LPp/1lYMTjCLxGK/Gl4yhrojibvlgc8uz+voI6JWOc2sYi7MdA6rL5gRdDBm76ImQAHDHDrxf+XTQaqEWO4AnlbwFqblofYo0Cr0dBI29t82kmf8o6M1Uuh2Vo0UyMUFswcx5y0ZxHFrAPT9uAuMT0jm0BNBuGebN7Dj3CHip36j8npo62xSlHviMdvHftWtj76wvbgwOCDDZei+sDefvrGYr/QGrPekL4/tMluBaItT3GtOKwWY89hVQPbzE4Yxynstl0z/XRfyzbKjFJcxhf9ZYgGttwIXXv0F6VOYg7VBePdrOh4ZCOC/7dAZeODxH344Z8IrvJH1G962PzoN8UnWnLF/bwcWoFMZ131+UkZwTvjPvX1eXzP80wwh/jHAZ5MCIwyrSdDiEnGtLUgUXxbPtIj96ZSMK9s8lfrJGmjvs1NTLLAd+i1M9AAKnu2uIKC+F4K7yjIXlbTeBlScj7bnzqrzMBewrsuEw0h9mDEokDKoJjebGjPx2FR8E8a6Cl+E4nRXOZNN7K/V35XQFmKKvaM9uVQs4w3BaW1X+4BefwDf/zBXJRSJBafpY8PCh9qXEGko/NehPEP+8P9uRyEI4=
+install:
+- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+- tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+- mv hugo ~/bin/
+script:
+- hugo --gc --minify
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local-dir: public
+  repo: natverse/natverse.github.io
+  target-branch: master
+  verbose: true
+  on: 
+  branch: master
