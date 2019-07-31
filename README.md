@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f348e1d-3d86-46f8-b933-9623f2569436/deploy-status)](https://app.netlify.com/sites/natverse/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f348e1d-3d86-46f8-b933-9623f2569436/deploy-status)](https://app.netlify.com/sites/natverse/deploys) [![Build Status](https://travis-ci.org/natverse/natverse_hugo.svg?branch=dev_pages)](https://travis-ci.org/natverse/natverse_hugo)
 
 # natverse.github.io
 
