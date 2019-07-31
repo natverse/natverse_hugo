@@ -20,7 +20,7 @@ This repo (and resulting website) is licensed as [CC BY-SA](LICENSE.md).
 ## Recommended setup for editing the website
 
 If you want to make regular edits to the website then one easy way to do this
-is using Rstudio and the blogdown package. First install Rstudio/R as normal
+is using Rstudio and the blogdown package. First install Rstudio/R as normal.
 
 ### Install blogdown/hugo (once only steps)
 
