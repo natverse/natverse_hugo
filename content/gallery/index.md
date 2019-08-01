@@ -1,5 +1,5 @@
 ---
-title: natverse packages
+title: Gallery
 ---
 
 <div class="package-section">
