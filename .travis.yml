@@ -20,5 +20,3 @@ deploy:
   repo: natverse/natverse.github.io
   target_branch: master
   verbose: true
-  on: 
-  branch: dev_pages
