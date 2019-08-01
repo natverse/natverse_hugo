@@ -11,9 +11,3 @@ title: R packages for neuroanatomical data
 ---
 
 The natverse is a collection of R packages designed for analysing neuroanatomical data. All packages help users import, analyse and visualise neuroanatomical data across species ranging from fruit-flies to mice.
-
-Install the complete natverse with:
-
-```
-devtools::install_github("natverse/natverse")
-```
