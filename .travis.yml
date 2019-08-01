@@ -21,4 +21,4 @@ deploy:
   target_branch: master
   verbose: true
   on: 
-  branch: master
+  branch: dev_pages

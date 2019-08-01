@@ -53,7 +53,7 @@ the live local preview of the site will be updated.
 
 ### Saving your changes
 
-* Check out the git `dev` branch
+* Check out the git `dev_pages` branch
 * Commit each distinct change in git
 * Make sure that the site works OK locally (with `blogdown::serve_site()`)
 

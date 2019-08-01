@@ -1,5 +1,5 @@
 ---
-title: natverse packages
+title: Publications
 ---
 
 <div class="package-section">
