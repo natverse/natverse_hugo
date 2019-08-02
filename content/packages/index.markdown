@@ -1,28 +1,18 @@
 ---
 title: natverse packages
-output:
-  html_document:
-    toc: true
-    toc_float: true
 ---
 
-```{r descp, echo=FALSE}
-pkg_description <- function(pkg){
-  pckg_descpription <- gsub('\n\\s+', ' ', utils::packageDescription(pkg = pkg,fields = 'Description'))
-  if (is.na(pckg_descpription)){pckg_descpription <- 'No Description'}
-  output_string <- gsub("\\..*","",as.character(pckg_descpription))
-  output_string <- paste0(output_string,'.')
-  return(output_string)
-}
-```
+
+
+## Core natverse
 
 <div class="package-section">
 <div class="package-section-info">
-  <h2 id="core-natverse">Core natverse</h2>
   <p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse x.x.x, the following packages are included in the core natverse:</p>
 </div>
 
 <div class="packages">
+
 <div class="package">
   
   <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img>
@@ -32,7 +22,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('nat')`
+NeuroAnatomy Toolbox (nat) enables analysis and visualisation of 3D biological image data, especially traced neurons.
 
 </p>
       
@@ -48,7 +38,7 @@ pkg_description <- function(pkg){
 <h3><a href="https://github.com/jefferislab/nat.nblast/">nat.nblast</a></h3>
 <p> 
 
-`r pkg_description('nat.nblast')`
+Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST-related functions.
 
 </p>
 
@@ -65,7 +55,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('nat.templatebrains')`
+Extends package 'nat' (NeuroAnatomy Toolbox) by providing objects and functions for handling template brains.
 
 </p>
 
@@ -81,7 +71,7 @@ pkg_description <- function(pkg){
 
  <p> 
 
-`r pkg_description('catmaid')`
+This package provide access to the API exposed by the CATMAID (C ollaborative A nnotation T oolkit for M assive A mounts of I mage D ata) web tool.
 
 </p>
  <a href="https://jefferis.github.io/rcatmaid/" aria-hidden="true">Learn more ...</a></p>
@@ -96,7 +86,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('neuprintr')`
+Access to the neuprint connectome analysis service, including  functions to fetch skeletons, synapses and ROIs, query connectivity data and develop new low level queries.
 
 </p>
 
@@ -112,7 +102,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('drvid')`
+API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 
 </p>
 
@@ -128,7 +118,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('neuromorphr')`
+Access to the NeuroMorpho.
 
 </p>
 
@@ -145,7 +135,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('elmr')`
+Provides tools to move between adult brain EM and light level data, emphasising the interaction between the CATMAID web application and the R Neuroanatomy Toolbox package.
 
 </p>
 
@@ -164,7 +154,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('nat.flybrains')`
+Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil segmentations for various template brains.
 
 </p>
 
@@ -183,7 +173,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('flycircuit')`
+This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.
 
 </p>
 
@@ -201,7 +191,7 @@ pkg_description <- function(pkg){
 
 <p> 
 
-`r pkg_description('nabor')`
+An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.
 
 </p>
 
@@ -221,10 +211,12 @@ pkg_description <- function(pkg){
 
 The natverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(natverse)`, so you'll need to load each one with its own call to `library()`.
 
+
+## External toolboxes
+The following are the external toolboxes that play well with the `natverse`:
 <div class="package-section">
 <div class="package-section-info">
-  <h2 id="External-toolboxes">External toolboxes</h2>
-  <p>The following are the external toolboxes that play well with the `natverse`:</p>
+ 
 </div>
 
 <div class="packages">
@@ -238,7 +230,7 @@ The natverse also includes many other packages with more specialised usage. They
 
 <p> 
 
-`r pkg_description('rgl')`
+Provides medium to high level functions for 3D interactive graphics, including functions modelled on base graphics (plot3d(), etc.
 
 </p>
       
@@ -257,7 +249,7 @@ The natverse also includes many other packages with more specialised usage. They
 
 <p> 
 
-`r pkg_description('igraph')`
+Routines for simple graphs and network analysis.
 
 </p>
       
@@ -276,7 +268,7 @@ The natverse also includes many other packages with more specialised usage. They
 
 <p> 
 
-`r pkg_description('alphashape3d')`
+Implementation in R of the alpha-shape of a finite set of points in the three-dimensional space.
 
 </p>
       
@@ -294,7 +286,7 @@ The natverse also includes many other packages with more specialised usage. They
 
 <p> 
 
-`r pkg_description('Rvcg')`
+Operations on triangular meshes based on 'VCGLIB'.
 
 </p>
       
@@ -312,7 +304,7 @@ The natverse also includes many other packages with more specialised usage. They
 
 <p> 
 
-`r pkg_description('Morpho')`
+A toolset for Geometric Morphometrics and mesh processing.
 
 </p>
       
