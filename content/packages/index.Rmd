@@ -1,0 +1,332 @@
+---
+title: natverse packages
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r descp, echo=FALSE}
+pkg_description <- function(pkg){
+  pckg_descpription <- gsub('\n\\s+', ' ', utils::packageDescription(pkg = pkg,fields = 'Description'))
+  if (is.na(pckg_descpription)){pckg_descpription <- 'No Description'}
+  output_string <- gsub("\\..*","",as.character(pckg_descpription))
+  output_string <- paste0(output_string,'.')
+  return(output_string)
+}
+```
+
+<div class="package-section">
+<div class="package-section-info">
+  <h2 id="core-natverse">Core natverse</h2>
+  <p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse x.x.x, the following packages are included in the core natverse:</p>
+</div>
+
+<div class="packages">
+<div class="package">
+  
+  <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/natverse/nat/">nat</a></h3>
+
+
+<p> 
+
+`r pkg_description('nat')`
+
+</p>
+      
+<a href="https://github.com/natverse/nat/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+  
+<div class="package">
+    
+<img class="package-image" src="/images/hex-natnblast.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/jefferislab/nat.nblast/">nat.nblast</a></h3>
+<p> 
+
+`r pkg_description('nat.nblast')`
+
+</p>
+
+<a href="https://github.com/jefferislab/nat.nblast/" aria-hidden="true">Learn more ...</a></p>
+      
+</div>
+</div>
+
+<div class="package">
+    
+<img class="package-image" src="/images/hex-nattemplatebrains.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/jefferislab/nat.templatebrains/">nat.templatebrains</a></h3>
+
+<p> 
+
+`r pkg_description('nat.templatebrains')`
+
+</p>
+
+ <a href="https://github.com/jefferislab/nat.templatebrains/" aria-hidden="true">Learn more ...</a></p>
+      
+</div>
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-catmaid.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferis.github.io/rcatmaid/">rcatmaid</a></h3>
+
+ <p> 
+
+`r pkg_description('catmaid')`
+
+</p>
+ <a href="https://jefferis.github.io/rcatmaid/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-neurprintr.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferislab.github.io/neuprintr/">neurprintr</a></h3>
+
+<p> 
+
+`r pkg_description('neuprintr')`
+
+</p>
+
+<a href="https://jefferislab.github.io/neuprintr/" aria-hidden="true">Learn more ...</a></p>
+    
+</div>
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-drvid.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferis.github.io/drvid/">drvid</a></h3>
+
+<p> 
+
+`r pkg_description('drvid')`
+
+</p>
+
+<a href="https://jefferis.github.io/drvid/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-neuromorphr.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferislab.github.io/neuromorphr/">neuromorphr</a></h3>
+
+<p> 
+
+`r pkg_description('neuromorphr')`
+
+</p>
+
+<a href="https://jefferislab.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-elmr.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferis.github.io/elmr/">elmr</a></h3>
+
+<p> 
+
+`r pkg_description('elmr')`
+
+</p>
+
+
+<a href="https://jefferis.github.io/elmr/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+
+
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-natflybrains.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://jefferislab.github.io/nat.flybrains/">nat.flybrains</a></h3>
+
+<p> 
+
+`r pkg_description('nat.flybrains')`
+
+</p>
+
+
+<a href="https://jefferislab.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+
+
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-flycircuit.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="http://jefferis.github.io/flycircuit/">flycircuit</a></h3>
+
+<p> 
+
+`r pkg_description('flycircuit')`
+
+</p>
+
+
+<a href="http://jefferis.github.io/flycircuit/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+
+</div>
+
+<div class="package">
+<img class="package-image" src="/images/hex-nabor.png" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/jefferis/nabor/">nabor</a></h3>
+
+<p> 
+
+`r pkg_description('nabor')`
+
+</p>
+
+
+<a href="https://github.com/jefferis/nabor/" aria-hidden="true">Learn more ...</a></p>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+The natverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(natverse)`, so you'll need to load each one with its own call to `library()`.
+
+<div class="package-section">
+<div class="package-section-info">
+  <h2 id="External-toolboxes">External toolboxes</h2>
+  <p>The following are the external toolboxes that play well with the `natverse`:</p>
+</div>
+
+<div class="packages">
+
+<div class="package">
+  
+  <img class="package-image" src="" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://r-forge.r-project.org/projects/rgl/">rgl</a></h3>
+
+
+<p> 
+
+`r pkg_description('rgl')`
+
+</p>
+      
+<a href="https://r-forge.r-project.org/projects/rgl/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+
+
+<div class="package">
+  
+  <img class="package-image" src="" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://igraph.org/r/">igraph</a></h3>
+
+
+<p> 
+
+`r pkg_description('igraph')`
+
+</p>
+      
+<a href="https://igraph.org/r/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+
+
+<div class="package">
+  
+  <img class="package-image" src="" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://cran.r-project.org/web/packages/alphashape3d/index.html/">alphashape3d</a></h3>
+
+
+<p> 
+
+`r pkg_description('alphashape3d')`
+
+</p>
+      
+<a href="https://cran.r-project.org/web/packages/alphashape3d/index.html/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+
+<div class="package">
+  
+  <img class="package-image" src="" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/zarquon42b/Rvcg/">Rvcg</a></h3>
+
+
+<p> 
+
+`r pkg_description('Rvcg')`
+
+</p>
+      
+<a href="https://github.com/zarquon42b/Rvcg/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+
+<div class="package">
+  
+  <img class="package-image" src="" alt=""></img>
+    <div class="package-info">
+<h3><a href="https://github.com/zarquon42b/Morpho/">Morpho</a></h3>
+
+
+<p> 
+
+`r pkg_description('Morpho')`
+
+</p>
+      
+<a href="https://github.com/zarquon42b/Morpho/" aria-hidden="true">
+        Learn more ...</a></p>
+</div>
+</div>
+
+
+
+  
+</div>
+</div>
+
+## Get help
+
+If you’re asking for R help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/).
