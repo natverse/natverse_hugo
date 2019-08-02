@@ -133,7 +133,6 @@ pkg_description <- function(pkg){
 <a href="https://jefferislab.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
 </div>
 
 <div class="package">
@@ -151,8 +150,6 @@ pkg_description <- function(pkg){
 <a href="https://jefferis.github.io/elmr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
-
 </div>
 
 <div class="package">
@@ -170,8 +167,6 @@ pkg_description <- function(pkg){
 <a href="https://jefferislab.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
-
 </div>
 
 <div class="package">
@@ -189,7 +184,6 @@ pkg_description <- function(pkg){
 <a href="http://jefferis.github.io/flycircuit/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
 </div>
 
 <div class="package">

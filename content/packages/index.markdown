@@ -125,7 +125,6 @@ Access to the NeuroMorpho.
 <a href="https://jefferislab.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
 </div>
 
 <div class="package">
@@ -143,8 +142,6 @@ Provides tools to move between adult brain EM and light level data, emphasising 
 <a href="https://jefferis.github.io/elmr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
-
 </div>
 
 <div class="package">
@@ -162,8 +159,6 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 <a href="https://jefferislab.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
-
 </div>
 
 <div class="package">
@@ -181,7 +176,6 @@ This package contains a small number of functions specifically designed to assis
 <a href="http://jefferis.github.io/flycircuit/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
-
 </div>
 
 <div class="package">
