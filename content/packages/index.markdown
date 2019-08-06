@@ -15,10 +15,10 @@ title: natverse packages
 
 <div class="package">
   
-  <a href="https://github.com/natverse/nat/">
+  <a href="https://natverse.github.io/nat/index.html/">
   <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://github.com/natverse/nat/">nat</a></h3>
+<h3><a href="https://natverse.github.io/nat/index.html/">nat</a></h3>
 
 
 <p> 
@@ -27,24 +27,24 @@ NeuroAnatomy Toolbox (nat) enables analysis and visualisation of 3D biological i
 
 </p>
       
-<a href="https://github.com/natverse/nat/" aria-hidden="true">
+<a href="https://natverse.github.io/nat/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
   
 <div class="package">
 
-<a href="https://github.com/jefferislab/nat.nblast/">    
+<a href="https://natverse.github.io/nat.nblast/index.html/">    
 <img class="package-image" src="/images/hex-natnblast.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://github.com/jefferislab/nat.nblast/">nat.nblast</a></h3>
+<h3><a href="https://natverse.github.io/nat.nblast/index.html/">nat.nblast</a></h3>
 <p> 
 
 Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST-related functions.
 
 </p>
 
-<a href="https://github.com/jefferislab/nat.nblast/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/nat.nblast/index.html/" aria-hidden="true">Learn more ...</a></p>
       
 </div>
 </div>
@@ -124,7 +124,7 @@ API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 
 <p> 
 
-Access to the NeuroMorpho.
+Access to the NeuroMorpho online repository (version 7.7 ) for single-cell neuron morphology data, enabling users to easily find and use neurons from this repository with nat family packages.
 
 </p>
 
@@ -195,7 +195,7 @@ This package contains a small number of functions specifically designed to assis
 
 <p> 
 
-An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.g. 3D).
+An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.
 
 </p>
 
@@ -325,4 +325,4 @@ A toolset for Geometric Morphometrics and mesh processing.
 
 ## Get help
 
-If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/) .
+If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/).

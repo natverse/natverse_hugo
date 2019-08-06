@@ -7,6 +7,7 @@ pkg_description <- function(pkg){
   pckg_descpription <- gsub('\n\\s+', ' ', utils::packageDescription(pkg = pkg,fields = 'Description'))
   if (is.na(pckg_descpription)){pckg_descpription <- 'No Description'}
   tempstring <- gsub("e\\.g\\.","e+g+",pckg_descpription) #added for accomodating e.g. from . at end of sentence
+  tempstring <- gsub("\\.([0-9])","+\\1",pckg_descpription) #added for accomodating version number with . like 7.7
   output_string <- gsub("\\..*","",as.character(tempstring))
   output_string <- gsub("\\+",".",as.character(output_string))
   output_string <- paste0(output_string,'.')
@@ -25,10 +26,10 @@ pkg_description <- function(pkg){
 
 <div class="package">
   
-  <a href="https://github.com/natverse/nat/">
+  <a href="https://natverse.github.io/nat/index.html/">
   <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://github.com/natverse/nat/">nat</a></h3>
+<h3><a href="https://natverse.github.io/nat/index.html/">nat</a></h3>
 
 
 <p> 
@@ -37,24 +38,24 @@ pkg_description <- function(pkg){
 
 </p>
       
-<a href="https://github.com/natverse/nat/" aria-hidden="true">
+<a href="https://natverse.github.io/nat/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
   
 <div class="package">
 
-<a href="https://github.com/jefferislab/nat.nblast/">    
+<a href="https://natverse.github.io/nat.nblast/index.html/">    
 <img class="package-image" src="/images/hex-natnblast.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://github.com/jefferislab/nat.nblast/">nat.nblast</a></h3>
+<h3><a href="https://natverse.github.io/nat.nblast/index.html/">nat.nblast</a></h3>
 <p> 
 
 `r pkg_description('nat.nblast')`
 
 </p>
 
-<a href="https://github.com/jefferislab/nat.nblast/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/nat.nblast/index.html/" aria-hidden="true">Learn more ...</a></p>
       
 </div>
 </div>
@@ -335,4 +336,4 @@ The following are the external toolboxes that play well with the `natverse`:
 
 ## Get help
 
-If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/) .
+If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/).
