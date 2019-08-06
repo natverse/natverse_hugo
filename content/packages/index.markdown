@@ -15,7 +15,8 @@ title: natverse packages
 
 <div class="package">
   
-  <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img>
+  <a href="https://github.com/natverse/nat/">
+  <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://github.com/natverse/nat/">nat</a></h3>
 
@@ -32,8 +33,9 @@ NeuroAnatomy Toolbox (nat) enables analysis and visualisation of 3D biological i
 </div>
   
 <div class="package">
-    
-<img class="package-image" src="/images/hex-natnblast.png" alt=""></img>
+
+<a href="https://github.com/jefferislab/nat.nblast/">    
+<img class="package-image" src="/images/hex-natnblast.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://github.com/jefferislab/nat.nblast/">nat.nblast</a></h3>
 <p> 
@@ -48,8 +50,8 @@ Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST
 </div>
 
 <div class="package">
-    
-<img class="package-image" src="/images/hex-nattemplatebrains.png" alt=""></img>
+ <a href="https://github.com/jefferislab/nat.templatebrains/">   
+<img class="package-image" src="/images/hex-nattemplatebrains.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://github.com/jefferislab/nat.templatebrains/">nat.templatebrains</a></h3>
 
@@ -65,7 +67,8 @@ Extends package 'nat' (NeuroAnatomy Toolbox) by providing objects and functions 
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-catmaid.png" alt=""></img>
+<a href="https://jefferis.github.io/rcatmaid/">
+<img class="package-image" src="/images/hex-catmaid.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://jefferis.github.io/rcatmaid/">rcatmaid</a></h3>
 
@@ -80,9 +83,10 @@ This package provide access to the API exposed by the CATMAID (C ollaborative A 
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-neurprintr.png" alt=""></img>
+<a href="https://jefferislab.github.io/neuprintr/">
+<img class="package-image" src="/images/hex-neurprintr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/neuprintr/">neurprintr</a></h3>
+<h3><a href="https://jefferislab.github.io/neuprintr/">neuprintr</a></h3>
 
 <p> 
 
@@ -96,7 +100,8 @@ Access to the neuprint connectome analysis service, including  functions to fetc
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-drvid.png" alt=""></img>
+<a href="https://jefferis.github.io/drvid/">
+<img class="package-image" src="/images/hex-drvid.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://jefferis.github.io/drvid/">drvid</a></h3>
 
@@ -112,7 +117,8 @@ API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-neuromorphr.png" alt=""></img>
+<a href="https://jefferislab.github.io/neuromorphr/">
+<img class="package-image" src="/images/hex-neuromorphr.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://jefferislab.github.io/neuromorphr/">neuromorphr</a></h3>
 
@@ -128,7 +134,8 @@ Access to the NeuroMorpho.
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-elmr.png" alt=""></img>
+<a href="https://jefferis.github.io/elmr/">
+<img class="package-image" src="/images/hex-elmr.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://jefferis.github.io/elmr/">elmr</a></h3>
 
@@ -145,7 +152,8 @@ Provides tools to move between adult brain EM and light level data, emphasising 
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-natflybrains.png" alt=""></img>
+<a href="https://jefferislab.github.io/nat.flybrains/">
+<img class="package-image" src="/images/hex-natflybrains.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://jefferislab.github.io/nat.flybrains/">nat.flybrains</a></h3>
 
@@ -162,7 +170,8 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-flycircuit.png" alt=""></img>
+<a href="http://jefferis.github.io/flycircuit/">
+<img class="package-image" src="/images/hex-flycircuit.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="http://jefferis.github.io/flycircuit/">flycircuit</a></h3>
 
@@ -179,13 +188,14 @@ This package contains a small number of functions specifically designed to assis
 </div>
 
 <div class="package">
-<img class="package-image" src="/images/hex-nabor.png" alt=""></img>
+<a href="https://github.com/jefferis/nabor/">
+<img class="package-image" src="/images/hex-nabor.png" alt=""></img></a>
     <div class="package-info">
 <h3><a href="https://github.com/jefferis/nabor/">nabor</a></h3>
 
 <p> 
 
-An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.
+An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.g. 3D).
 
 </p>
 
@@ -219,7 +229,7 @@ The following are the external toolboxes that play well with the `natverse`:
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://r-forge.r-project.org/projects/rgl/">rgl</a></h3>
+<h3><a href="https://cran.r-project.org/web/packages/rgl/index.html/">rgl</a></h3>
 
 
 <p> 
@@ -228,7 +238,7 @@ Provides medium to high level functions for 3D interactive graphics, including f
 
 </p>
       
-<a href="https://r-forge.r-project.org/projects/rgl/" aria-hidden="true">
+<a href="https://cran.r-project.org/web/packages/rgl/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -238,7 +248,7 @@ Provides medium to high level functions for 3D interactive graphics, including f
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://igraph.org/r/">igraph</a></h3>
+<h3><a href="https://cran.r-project.org/web/packages/igraph/index.html/">igraph</a></h3>
 
 
 <p> 
@@ -247,7 +257,7 @@ Routines for simple graphs and network analysis.
 
 </p>
       
-<a href="https://igraph.org/r/" aria-hidden="true">
+<a href="https://cran.r-project.org/web/packages/igraph/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -275,7 +285,7 @@ Implementation in R of the alpha-shape of a finite set of points in the three-di
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://github.com/zarquon42b/Rvcg/">Rvcg</a></h3>
+<h3><a href="https://cran.r-project.org/web/packages/Rvcg/index.html/">Rvcg</a></h3>
 
 
 <p> 
@@ -284,7 +294,7 @@ Operations on triangular meshes based on 'VCGLIB'.
 
 </p>
       
-<a href="https://github.com/zarquon42b/Rvcg/" aria-hidden="true">
+<a href="https://cran.r-project.org/web/packages/Rvcg/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -293,7 +303,7 @@ Operations on triangular meshes based on 'VCGLIB'.
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://github.com/zarquon42b/Morpho/">Morpho</a></h3>
+<h3><a href="https://cran.r-project.org/web/packages/Morpho/index.html/">Morpho</a></h3>
 
 
 <p> 
@@ -302,7 +312,7 @@ A toolset for Geometric Morphometrics and mesh processing.
 
 </p>
       
-<a href="https://github.com/zarquon42b/Morpho/" aria-hidden="true">
+<a href="https://cran.r-project.org/web/packages/Morpho/index.html/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
