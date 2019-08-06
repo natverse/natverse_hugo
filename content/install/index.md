@@ -26,7 +26,7 @@ author: Gregory Jefferis
   # get help
   ?nat
   ```
-Learn more about the natverse package at <https://natverse.github.io/>.
+Learn more about the natverse at <https://natverse.github.io/>.
 
 ## Troubleshooting
 
