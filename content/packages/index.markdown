@@ -229,7 +229,7 @@ The following are the external toolboxes that play well with the `natverse`:
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://cran.r-project.org/web/packages/rgl/index.html/">rgl</a></h3>
+<h3><a href="https://cran.r-project.org/package=rgl">rgl</a></h3>
 
 
 <p> 
@@ -238,7 +238,7 @@ Provides medium to high level functions for 3D interactive graphics, including f
 
 </p>
       
-<a href="https://cran.r-project.org/web/packages/rgl/index.html/" aria-hidden="true">
+<a href="https://cran.r-project.org/package=rgl" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -248,7 +248,7 @@ Provides medium to high level functions for 3D interactive graphics, including f
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://cran.r-project.org/web/packages/igraph/index.html/">igraph</a></h3>
+<h3><a href="https://cran.r-project.org/package=igraph/">igraph</a></h3>
 
 
 <p> 
@@ -257,7 +257,7 @@ Routines for simple graphs and network analysis.
 
 </p>
       
-<a href="https://cran.r-project.org/web/packages/igraph/index.html/" aria-hidden="true">
+<a href="https://cran.r-project.org/package=igraph" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -267,7 +267,7 @@ Routines for simple graphs and network analysis.
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://cran.r-project.org/web/packages/alphashape3d/index.html/">alphashape3d</a></h3>
+<h3><a href="https://cran.r-project.org/package=alphashape3d">alphashape3d</a></h3>
 
 
 <p> 
@@ -276,7 +276,7 @@ Implementation in R of the alpha-shape of a finite set of points in the three-di
 
 </p>
       
-<a href="https://cran.r-project.org/web/packages/alphashape3d/index.html/" aria-hidden="true">
+<a href="https://cran.r-project.org/package=alphashape3d" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -285,7 +285,7 @@ Implementation in R of the alpha-shape of a finite set of points in the three-di
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://cran.r-project.org/web/packages/Rvcg/index.html/">Rvcg</a></h3>
+<h3><a href="https://cran.r-project.org/package=Rvcg">Rvcg</a></h3>
 
 
 <p> 
@@ -294,7 +294,7 @@ Operations on triangular meshes based on 'VCGLIB'.
 
 </p>
       
-<a href="https://cran.r-project.org/web/packages/Rvcg/index.html/" aria-hidden="true">
+<a href="https://cran.r-project.org/package=Rvcg" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
@@ -303,7 +303,7 @@ Operations on triangular meshes based on 'VCGLIB'.
   
   <img class="package-image" src="" alt=""></img>
     <div class="package-info">
-<h3><a href="https://cran.r-project.org/web/packages/Morpho/index.html/">Morpho</a></h3>
+<h3><a href="https://cran.r-project.org/package=Morpho">Morpho</a></h3>
 
 
 <p> 
@@ -312,7 +312,7 @@ A toolset for Geometric Morphometrics and mesh processing.
 
 </p>
       
-<a href="https://cran.r-project.org/web/packages/Morpho/index.html/" aria-hidden="true">
+<a href="https://cran.r-project.org/package=Morpho" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
