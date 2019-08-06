@@ -15,10 +15,10 @@ title: natverse packages
 
 <div class="package">
   
-  <a href="https://natverse.github.io/nat/index.html/">
+  <a href="https://natverse.github.io/nat/">
   <img class="package-image" src="/images/hex-nat_logo.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://natverse.github.io/nat/index.html/">nat</a></h3>
+<h3><a href="https://natverse.github.io/nat/">nat</a></h3>
 
 
 <p> 
@@ -27,24 +27,24 @@ NeuroAnatomy Toolbox (nat) enables analysis and visualisation of 3D biological i
 
 </p>
       
-<a href="https://natverse.github.io/nat/index.html/" aria-hidden="true">
+<a href="https://natverse.github.io/nat/" aria-hidden="true">
         Learn more ...</a></p>
 </div>
 </div>
   
 <div class="package">
 
-<a href="https://natverse.github.io/nat.nblast/index.html/">    
+<a href="https://natverse.github.io/nat.nblast/">    
 <img class="package-image" src="/images/hex-natnblast.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://natverse.github.io/nat.nblast/index.html/">nat.nblast</a></h3>
+<h3><a href="https://natverse.github.io/nat.nblast/">nat.nblast</a></h3>
 <p> 
 
 Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST-related functions.
 
 </p>
 
-<a href="https://natverse.github.io/nat.nblast/index.html/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/nat.nblast/" aria-hidden="true">Learn more ...</a></p>
       
 </div>
 </div>
@@ -124,7 +124,7 @@ API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 
 <p> 
 
-Access to the NeuroMorpho online repository (version 7.7 ) for single-cell neuron morphology data, enabling users to easily find and use neurons from this repository with nat family packages.
+No Description.
 
 </p>
 
