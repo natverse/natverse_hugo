@@ -50,10 +50,10 @@ Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST
 </div>
 
 <div class="package">
- <a href="https://github.com/jefferislab/nat.templatebrains/">   
+ <a href="https://natverse.github.io/nat.templatebrains/">   
 <img class="package-image" src="/images/hex-nattemplatebrains.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://github.com/jefferislab/nat.templatebrains/">nat.templatebrains</a></h3>
+<h3><a href="https://natverse.github.io/nat.templatebrains/">nat.templatebrains</a></h3>
 
 <p> 
 
@@ -61,7 +61,7 @@ Extends package 'nat' (NeuroAnatomy Toolbox) by providing objects and functions 
 
 </p>
 
- <a href="https://github.com/jefferislab/nat.templatebrains/" aria-hidden="true">Learn more ...</a></p>
+ <a href="https://natverse.github.io/nat.templatebrains/" aria-hidden="true">Learn more ...</a></p>
       
 </div>
 </div>
