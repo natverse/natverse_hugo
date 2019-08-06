@@ -177,7 +177,7 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 
 <p> 
 
-This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.
+This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.tw.
 
 </p>
 
@@ -195,7 +195,7 @@ This package contains a small number of functions specifically designed to assis
 
 <p> 
 
-An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.
+An R wrapper for 'libnabo', an exact or approximate k nearest neighbour library which is optimised for low dimensional spaces (e.g. 3D).
 
 </p>
 
