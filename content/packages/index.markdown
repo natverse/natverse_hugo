@@ -325,4 +325,4 @@ A toolset for Geometric Morphometrics and mesh processing.
 
 ## Get help
 
-If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/).
+If you’re asking for help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](https://natverse.github.io/help/#reprex) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://natverse.github.io/help/) .
