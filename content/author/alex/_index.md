@@ -11,4 +11,4 @@ team: true
 
 
 Alex is a PhD student at the University of Cambridge, MRC LMB. His projects focus on neuroanatomy 
-and connectomics in in the vinegar fly using light-level and electron microscopy data. 
+and connectomics in the vinegar fly brain using light-level and electron microscopy data. 
