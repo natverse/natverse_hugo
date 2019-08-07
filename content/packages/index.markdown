@@ -234,7 +234,7 @@ The following are the external toolboxes that play well with the `natverse`:
 
 <p> 
 
-Provides medium to high level functions for 3D interactive graphics, including functions modelled on base graphics (plot3d(), etc.
+Provides medium to high level functions for 3D interactive graphics, including functions modelled on base graphics (plot3d(), etc.) as well as functions for constructing representations of geometric objects (cube3d(), etc.).
 
 </p>
       

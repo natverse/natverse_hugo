@@ -7,6 +7,7 @@ pkg_description <- function(pkg){
   pckg_descpription <- gsub('\n\\s+', ' ', utils::packageDescription(pkg = pkg,fields = 'Description'))
   if (is.na(pckg_descpription)){pckg_descpription <- 'No Description'}
   tempstring <- gsub("e\\.g\\.","e+g+",pckg_descpription) #added for accomodating e.g. from . at end of sentence
+  tempstring <- gsub("etc\\.","etc+",tempstring) #added for accomodating etc. from . at end of sentence
   tempstring <- gsub("\\.([A-z0-9])","+\\1",tempstring) #added for accomodating version number with . like 7.7, accomodating urls like .tw
   output_string <- gsub("\\..*","",as.character(tempstring))
   output_string <- gsub("\\+",".",as.character(output_string))
