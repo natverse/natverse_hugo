@@ -124,7 +124,7 @@ API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 
 <p> 
 
-No Description.
+Access to the NeuroMorpho online repository (version 7.7 ) for single-cell neuron morphology data, enabling users to easily find and use neurons from this repository with nat family packages.
 
 </p>
 
