@@ -2,128 +2,29 @@
 title: Publications
 ---
 
-<div class="package-section">
-
-<div class="package-section-info">
-  <h2 id="core-natverse">Core natverse</h2>
-  <p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse 1.0.0, the following packages are included in the core natverse:</p>
-</div>
-
-<div class="packages">
-  <div class="package">
-    <img class="package-image" src="/images/hex-ggplot2.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://ggplot2.tidyverse.org/">ggplot2</a></h3>
-      <p>ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details. <a href="http://ggplot2.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-dplyr.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://dplyr.tidyverse.org/">dplyr</a></h3>
-      <p>dplyr provides a grammar of data manipulation, providing a consistent set of verbs that solve the most common data manipulation challenges. <a href="http://dplyr.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-tidyr.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://tidyr.tidyverse.org/">tidyr</a></h3>
-      <p>tidyr provides a set of functions that help you get to tidy data. Tidy data is data with a consistent form: in brief, every variable goes in a column, and every column is a variable. <a href="http://tidyr.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-readr.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://readr.tidyverse.org/">readr</a></h3>
-      <p>readr provides a fast and friendly way to read rectangular data (like csv, tsv, and fwf). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. <a href="http://readr.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-purrr.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://purrr.tidyverse.org/">purrr</a></h3>
-      <p>purrr enhances R’s functional programming (FP) toolkit by providing a complete and consistent set of tools for working with functions and vectors. Once you master the basic concepts, purrr allows you to replace many for loops with code that is easier to write and more expressive.
-      <a href="http://purrr.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-tibble.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://tibble.tidyverse.org/">tibble</a></h3>
-      <p>tibble is a modern re-imagining of the data frame, keeping what time has proven to be effective, and throwing out what it has not. Tibbles are data.frames that are lazy and surly: they do less and complain more forcing you to confront problems earlier, typically leading to cleaner, more expressive code.
-      <a href="http://tibble.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-stringr.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://stringr.tidyverse.org/">stringr</a></h3>
-      <p>stringr provides a cohesive set of functions designed to make working with strings as easy as possible. It is built on top of stringi, which uses the ICU C library to provide fast, correct implementations of common string manipulations.
-      <a href="http://stringr.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-  <div class="package">
-    <img class="package-image" src="/images/hex-forcats.png" alt=""></img>
-    <div class="package-info">
-      <h3><a href="http://forcats.tidyverse.org/">forcats</a></h3>
-      <p>forcats provides a suite of useful tools that solve common problems with factors. R uses factors to handle categorical variables, variables that have a fixed and known set of possible values.
-      <a href="http://forcats.tidyverse.org/" aria-hidden="true">Learn more ...</a></p>
-    </div>
-  </div>
-</div>
-</div>
-
-The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(tidyverse)`, so you'll need to load each one with its own call to `library()`.
-
-## Import
-
-As well as [readr](http://readr.tidyverse.org), for reading flat files, the tidyverse includes:
-
-* [readxl](http://readxl.tidyverse.org) for `.xls` and `.xlsx` sheets.
-
-* [haven](http://haven.tidyverse.org) for SPSS, Stata, and SAS data.
-
-There are a handful of other packages that are not in the tidyverse, but are tidyverse-adjacent. They are very useful for importing data from other sources:
-
-* [jsonlite](https://github.com/jeroen/jsonlite#jsonlite) for JSON.
-
-* [xml2](https://github.com/r-lib/xml2) for XML.
-
-* [httr](https://github.com/r-lib/httr) for web APIs.
-
-* [rvest](https://github.com/hadley/rvest) for web scraping.
-
-* [DBI](https://github.com/rstats-db/DBI) for relational databases.
-  To connect to a specific database, you'll need to pair DBI with a specific
-  backend like RSQLite, RPostgres, or odbc. Learn more at
-  <http://db.rstudio.com>.
-
-## Wrangle
-
-In addition to [tidyr](http://tidyr.tidyverse.org), and [dplyr](http://dplyr.tidyverse.org), there are five packages (including [stringr](http://stringr.tidyverse.org) and [forcats](http://forcats.tidyverse.org)) which are designed to work with specific types of data:
-
-* [lubridate](http://lubridate.tidyverse.org) for dates and date-times.
-* [hms](https://github.com/tidyverse/hms) for time-of-day values.
-* [blob](https://github.com/tidyverse/blob) for storing blob (binary) data.
-
-## Program
-
-In addition to [purrr](http://purrr.tidyverse.org), which provides very consistent and natural methods for iterating on R objects, there are two additional tidyverse packages that help with general programming challenges:
-
-* [magrittr](http://magrittr.tidyverse.org) provides the pipe, `%>%` used
-  throughout the tidyverse. It also provide a number of more specialised
-  piping operators (like `%$%` and `%<>%`) that can be useful in other places.
-
-* [glue](https://github.com/tidyverse/glue) provides an alternative to
-  `paste()` that makes it easier to combine data and strings.
-
-## Model
-
-Modelling within the tidyverse is largely a work in progress. You can see some of the pieces in the [recipes](http://github.com/topepo/recipes) and [rsample](http://github.com/topepo/rsample) packages but we do not yet have a cohesive system that solves a wide range of challenges. This work will largely replace the [modelr](https://github.com/tidyverse/modelr) package used in [R4DS](http://r4ds.had.co.nz/).
-
-You may also find [broom](https://github.com/tidyverse/broom) to be useful: it turns models into tidy data which you can then wrangle and visualise using the tools you already know.
-
-## Get help
-
-If you’re asking for R help, reporting a bug, or requesting a new feature, you’re more likely to succeed if you include a good reproducible example, which is precisely what the [reprex](http://reprex.tidyverse.org/) package is meant for. You can learn more about reprex, along with other tips on how to help others help you in the [help section](https://www.tidyverse.org/help/).
+1.	Auer, T.O., Khallaf, M.A., Silbering, A.F., Zappia, G., Ellis, K., Hansson,    B., Jeﬀeris, G.S., Caron, S., Knaden, M., and Benton, R. (2019). _The making of an olfactory specialist_. bioRxiv. doi: [10.1101/546507](http://doi.org/10.1101/546507)
+2.	Ding, Y., Lillvis, J.L., Cande, J., Berman, G.J., Arthur, B.J., Long, X., Xu, M., Dickson, B.J., and Stern, D.L. (2019). _Neural Evolution of Context-Dependent Fly Song_. Curr Biol 29, 1089–1099.e7. doi: [10.1016/j.cub.2019.02.019](http://doi.org/10.1016/j.cub.2019.02.019)
+3.	Dolan, M.-J., Frechter, S., Bates,  A.S.,  Dan,  C.,  Huoviala,  P.,  Roberts,  R.J., Schlegel, P., Dhawan, S., Tabano, R., Dionne, H., et al. (2019). _Neurogenetic dissection of the Drosophila innate olfactory processing center_. eLife 8, e43079. doi: [10.1101/404277](http://doi.org/10.1101/404277)
+4.	Frechter, S., Bates, A.S., Tootoonian, S., Dolan, M.-J., Manton, J.D., Jamasb, A., Kohl, J., Bock, D., and Jeﬀeris, G.S. (2019). _Functional and Anatomical Specificity in a Higher Olfactory Centre_. eLife 8, e44590. doi: [10.7554/eLife.44590](http://doi.org/10.7554/eLife.44590)
+5.	Li,  P.H.,  Lindsey,  L.F.,  Januszewski,  M.,  Zheng,  Z.,  Bates,  A.S.,  Taisz,  I., Tyka, M., Nichols, M., Li, F., Perlman, E., et al. (2019). _Automated Reconstruction of a Serial-Section EM Drosophila Brain with Flood-Filling Networks and Local Realignment_. bioRxiv. doi: [10.1101/605634](http://doi.org/10.1101/605634)
+6.	Sayin, S., De Backer, J.-F., Wosniack, M.E., Lewis, L., Siju,  K.,  Frisch,  L.-M., Schlegel, P., Edmondson-Stait, A., Sharifi, N., Fisher, C., et al. (2019). _A neural circuit arbitrates between perseverance and withdrawal in hungry Drosophila_. Neuron in press. doi: [10.1101/259119](http://doi.org/10.1101/259119)
+7.	Bogovic, J.A., Otsuna, H., Heinrich, L., Ito, M., Jeter, J., Meissner, G., Nern, A., Colonell, J., Malkesman, O., Ito, K., and Saalfeld, S. (2018).  _An unbiased template of the Drosophila brain and ventral nerve cord_. bioRxiv. doi: [10.1101/376384](http://doi.org/10.1101/376384)
+8.	Chin, S.G., Maguire, S.E., Huoviala, P., Jeﬀeris, G.S.X.E., and Potter, C.J. (2018). _Olfactory Neurons and Brain Centers Directing Oviposition Decisions in Drosophila_. Cell Rep 24, 1667–1678. doi: [10.1016/j.celrep.2018.07.018](http://doi.org/10.1016/j.celrep.2018.07.018)
+9.	Clemens, J., Girardin, C.C., Coen, P., Guan, X.-J., Dickson, B.J., and Murthy, M. (2018). _Connecting Neural Codes with Behavior in the Auditory System of Drosophila_. Neuron 97, 475. doi: [10.1016/j.neuron.2017.12.033](http://doi.org/10.1016/j.neuron.2017.12.033)
+10.	Dolan, M.-J., Belliart-Gurin, G., Bates, A.S., Frechter, S., Lampin-Saint-Amaux, A., Aso,  Y.,  Roberts,  R.J.V.,  Schlegel,  P.,  Wong,  A.,  Hammad,  A., et al. (2018). _Communication from Learned to Innate Olfactory Processing Centers Is Required for Memory Retrieval in Drosophila_. Neuron. doi: [10.1016/j.neuron.2018.08.037](http://doi.org/10.1016/j.neuron.2018.08.037)
+11.	Huoviala, P., Dolan, M.-J., Love, F., Frechter, S., Roberts, R.J., Mitrevica, Z., Schlegel, P., Bates, A.S.S., Aso, Y., Rodrigues, T., et al. (2018). _Neural circuit basis of aversive odour processing in Drosophila from sensory input to descending output._ bioRxiv. doi: [10.1101/394403](http://doi.org/10.1101/394403)
+12.	Jeanne, J.M., Fiek, M., and Wilson, R.I. (2018). _The Organization of Projections from Olfactory Glomeruli onto Higher-Order Neurons_. Neuron 98, 1198–1213.e6. doi: [10.1016/j.neuron.2018.05.011](http://doi.org/10.1016/j.neuron.2018.05.011)
+13.	Zheng, Z., Lauritzen, J.S., Perlman, E., Robinson, C.G., Nichols, M., Milkie, D., Torrens, O., Price, J., Fisher, C.B., Sharifi, N., et al. (2018). _A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster_. Cell 174, 730–743.e22. doi: [10.1016/j.cell.2018.06.019](http://doi.org/10.1016/j.cell.2018.06.019)
+14.	Eichler, K., Li, F., Litwin-Kumar, A., Park, Y., Andrade, I., Schneider- Mizell, C.M., Saumweber, T., Huser, A., Eschbach, C., Gerber, B., et al. (2017). _The complete connectome of a learning and memory centre in an insect brain_. Nature 548, 175–182. doi: [10.1038/nature23455](http://doi.org/10.1038/nature23455)
+15.	Sutcliﬀe, B., Ng, J., Auer, T.O., Pasche, M., Benton, R., Jeﬀeris, G.S.X.E., and Cachero, S. (2017). "Second-Generation Drosophila Chemical Tags:
+Sensitivity, Versatility, and Speed". Genetics 205, 1399–1408. doi: [10.1534/genetics.116.199281](http://doi.org/10.1534/genetics.116.199281)
+16.	Costa, M., Manton, J.D., Ostrovsky, A.D., Prohaska, S., and Jeﬀeris,
+G.S.X.E. (2016). _NBLAST: Rapid, Sensitive Comparison of Neuronal Structure and Construction of Neuron Family Databases_. Neuron 91, 293–311. doi: [10.1016/j.neuron.2016.06.012](http://doi.org/10.1016/j.neuron.2016.06.012)
+17.	Panser, K., Tirian,  L.,  Schulze,  F.,  Villalba,  S.,  Jeﬀeris,  G.S.X.E.,  Bhler, K., and Straw, A.D. (2016). _Automatic Segmentation of Drosophila Neural Compartments Using GAL4 Expression Data Reveals Novel Visual Pathways_. Curr Biol 26, 1943–54. doi: [10.1016/j.cub.2016.05.052](http://doi.org/10.1016/j.cub.2016.05.052)
+18.	Manton, J.D., Ostrovsky, A.D., Goetz, L., Costa, M., Rohlfing, T., and Jeﬀeris, G.S.X.E. (2014). _Combining genome-scale Drosophila 3D neuroanatomical data by bridging template brains_. bioRxiv. doi: [10.1101/006353](http://doi.org/10.1101/006353)
+19.	Kohl, J., Ostrovsky, A.D., Frechter, S., and Jeﬀeris, G.S.X.E. (2013). _A bidirectional circuit switch reroutes pheromone signals in male and female brains_. Cell 155, 1610–23. doi: [10.1016/j.cell.2013.11.025](http://doi.org/10.1016/j.cell.2013.11.025)
+20.	Grosjean, Y., Rytz, R., Farine, J.-P., Abuin, L., Cortot, J., Jeﬀeris, G.S.X.E., and Benton, R. (2011). _An olfactory receptor for food-derived odours promotes male courtship in Drosophila_. Nature 478, 236–40. doi: [10.1038/nature10428](http://doi.org/10.1038/nature10428)
+21.	Silbering, A.F., Rytz, R., Grosjean, Y., Abuin, L., Ramdya, P., Jeﬀeris, G.S.X.E., and Benton, R. (2011). _Complementary function and integrated wiring of the evolutionarily distinct Drosophila olfactory subsystems_. J Neurosci 31, 13357–75. doi: [10.1523/JNEUROSCI.2360-11.2011](http://doi.org/10.1523/JNEUROSCI.2360-11.2011)
+22.	Cachero, S., Ostrovsky, A.D., Yu, J.Y., Dickson, B.J., and Jeﬀeris, G.S.X.E. (2010). _Sexual dimorphism in the fly brain_. Curr Biol 20, 1589–601. doi: [10.1016/j.cub.2010.07.045](http://doi.org/10.1016/j.cub.2010.07.045)
+23.	Yu, J.Y., Kanai, M.I., Demir,  E.,  Jeﬀeris,  G.S.X.E.,  and  Dickson,  B.J. (2010). _Cellular organization of the neural circuit that drives Drosophila courtship behavior_. Curr Biol 20, 1602–14. doi: [10.1016/j.cub.2010.08.025](http://doi.org/10.1016/j.cub.2010.08.025)
+24.	Jeﬀeris, G.S.X.E., Potter, C.J., Chan, A.M., Marin, E.C., Rohlfing, T.,  Maurer, C.R., and Luo, L. (2007). _Comprehensive maps of Drosophila higher olfactory centers: spatially segregated fruit and pheromone representation_. Cell 128, 1187–203. doi: [10.1016/j.cell.2007.01.040](http://doi.org/10.1016/j.cell.2007.01.040)
