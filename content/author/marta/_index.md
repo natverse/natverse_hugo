@@ -4,8 +4,8 @@ name: Marta Costa
 photo: https://github.com/mmc46.png
 social:
   github: mmc46
-twitter: martamcosta2
-website: https://www.zoo.cam.ac.uk/directory/marta-costa
+  twitter: martamcosta2
+  website: https://www.zoo.cam.ac.uk/directory/marta-costa
 team: true
 ---
 
