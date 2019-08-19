@@ -2,6 +2,8 @@
 title: Gallery
 ---
 
+{{< gallery dir="/images/gallery" />}} {{< load-photoswipe >}}
+
 <div class="package-section">
 
 <div class="package-section-info">
