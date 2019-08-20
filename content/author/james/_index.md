@@ -5,7 +5,7 @@ photo: https://www.fitz.cam.ac.uk/sites/default/files/styles/person/public/2019-
 social:
   github: jdmanton
   twitter:
-  website: https://www.fitz.cam.ac.uk/people/mr-james-manton
+  website: https://www.mrc-lmb.cam.ac.uk/jmanton/
 team: true
 ---
 
