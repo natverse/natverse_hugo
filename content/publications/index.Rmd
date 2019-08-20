@@ -4,3 +4,36 @@ bibliography: natverse-papers.bib
 nocite: | 
   @Ding:2019aa, @Bogovic376384, @Eichler:2017aa, @Clemens:2018aa, @Jeanne:2018aa, @manton2014, @Huoviala394403, @Li605634, @Auer546507, @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @Costa:2016aa, @Panser:2016aa, @Sutcliffe:2017aa, @Chin:2018aa, @Dolan:2018aa, @Dolan404277, @Frechter336982, @Sayin259119
 ---
+
+
+## Citations when using the natverse
+
+If you use the natverse in your work, please cite us. Currently the most appropriate
+citations are:
+
+* NBLAST: @Costa:2016aa [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012)
+* Bridging and Mirroring registrations: @manton2014 [10.1101/006353](https://doi.org/10.1101/006353)
+* General natverse: @cachero2010 [10.1016/j.cub.2010.07.045](https://doi.org/10.1016/j.cub.2010.07.045)
+
+We aim to have a new natverse paper online in Autumn 2019 that will amalgamate the 
+Manton and Cachero references.
+
+## Publications using the natverse
+
+<!-- Note that for some reason I needed to use the absolute path + here in the YAML header-->
+<!-- although in this snippet, the bare filename without any path worked as expected -->
+```{r, include=FALSE}
+bb=bibtex::read.bib('natverse-papers.bib')
+cat(paste0('@',names(bb)), sep = ', ')
+npubs=length(bb)
+```
+
+
+The following `r npubs` publications used the natverse or its direct ancestor 
+(the R [AnalysisSuite](https://github.com/jefferis/AnalysisSuite)).
+If you use a natverse package in one of your papers, then please let us know. 
+You can even add a bibtex formatted record for your publication straight to the
+top of our bibliography file
+by [following this link](https://github.com/natverse/natverse_hugo/edit/dev_pages/content/publications/natverse-papers.bib). Thanks!
+
+---
