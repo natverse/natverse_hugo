@@ -2,7 +2,7 @@
 title: Learn the tidyverse
 ---
 
-<a href="http://amzn.to/2aHLAQ1"><img class="bookCover" style="width:200px" src="../images/cover.png" width="80" alt=""></a>
+<a href="http://dx.doi.org/10.1016/j.neuron.2016.06.012"><img class="bookCover" style="width:250px" src="../images/costa-nblast-scaled-p1clusters.png" width="80" alt=""></a>
 
 <h2 class='noTrickPadding' id='r4ds'>R for data science</h2>
 

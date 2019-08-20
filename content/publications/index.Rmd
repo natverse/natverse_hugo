@@ -1,9 +1,12 @@
 ---
 title: Publications
 bibliography: natverse-papers.bib
+csl: elsevier-with-titles.csl
 nocite: | 
   '`r {bibfile = here::here('content/publications/natverse-papers.bib')
   bb=bibtex::read.bib(bibfile)
+  # resort by year
+  bb=bb[names(sort(unlist(bb$'year')))]
   paste(paste0('@',names(bb)), collapse = ', ')}`'
 ---
 
@@ -17,8 +20,7 @@ citations are:
 * Bridging and Mirroring registrations: @manton2014 [10.1101/006353](https://doi.org/10.1101/006353)
 * General natverse: @cachero2010 [10.1016/j.cub.2010.07.045](https://doi.org/10.1016/j.cub.2010.07.045)
 
-We aim to have a new natverse paper online in Autumn 2019 that will amalgamate the 
-Manton and Cachero references.
+We aim to have a new natverse paper online in Autumn 2019 that will amalgamate references [@manton2014;@cachero2010].
 
 ## Publications using the natverse
 
