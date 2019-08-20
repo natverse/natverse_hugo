@@ -26,7 +26,7 @@ MathJaxVersion = "2.7.1"
 
 [footer]
     github_url = "https://github.com/natverse/"
-    twitter_url = "https://twitter.com/hashtag/rstats"
+    twitter_url = "https://twitter.com/hashtag/natverse"
     support = "Proudly supported by"
 
 # leave blank in quotes for the default = true
