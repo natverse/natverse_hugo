@@ -8,7 +8,7 @@ title: natverse packages
 
 <div class="package-section">
 <div class="package-section-info">
-  <p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse x.x.x, the following packages are included in the core natverse:</p>
+<p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse x.x.x, the following packages are included in the core natverse:</p>
 </div>
 
 <div class="packages">
@@ -67,17 +67,17 @@ Extends package 'nat' (NeuroAnatomy Toolbox) by providing objects and functions 
 </div>
 
 <div class="package">
-<a href="https://jefferis.github.io/rcatmaid/">
+<a href="https://natverse.github.io/rcatmaid/">
 <img class="package-image" src="/images/hex-catmaid.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferis.github.io/rcatmaid/">rcatmaid</a></h3>
+<h3><a href="https://natverse.github.io/rcatmaid/">catmaid</a></h3>
 
  <p> 
 
 This package provide access to the API exposed by the CATMAID (C ollaborative A nnotation T oolkit for M assive A mounts of I mage D ata) web tool.
 
 </p>
- <a href="https://jefferis.github.io/rcatmaid/" aria-hidden="true">Learn more ...</a></p>
+ <a href="https://natverse.github.io/rcatmaid/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
@@ -170,19 +170,19 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 </div>
 
 <div class="package">
-<a href="http://jefferis.github.io/flycircuit/">
+<a href="http://natverse.github.io/flycircuit/">
 <img class="package-image" src="/images/hex-flycircuit.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="http://jefferis.github.io/flycircuit/">flycircuit</a></h3>
+<h3><a href="http://natverse.github.io/flycircuit/">flycircuit</a></h3>
 
 <p> 
 
-This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.tw.
+Functions and data for spatial analysis and annotation of neurons from the 'FlyCircuit' collection available online at http://flycircuit.tw.
 
 </p>
 
 
-<a href="http://jefferis.github.io/flycircuit/" aria-hidden="true">Learn more ...</a></p>
+<a href="http://natverse.github.io/flycircuit/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
