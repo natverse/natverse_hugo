@@ -10,7 +10,7 @@ col2:
 title: Neuroanatomical data analysis
 ---
 
-The natverse is a [collection of interoperable R packages](/packages) to import, visualise, analyse, manipulate and export 3D neuroanatomical data, including neurons, brains and brain regions. These tools have been used to study brain and circuit organisation in a range of species including flies and mice.
+The natverse is a [collection of interoperable R packages](/packages) to import, visualise, analyse, manipulate and export 3D neuroanatomical data, including neurons, brains and brain regions. These tools have been used to study brain and circuit organisation in a range of species including flies, fish and mice.
 
 Install the natverse with:
 ```
