@@ -21,7 +21,7 @@ If you need more help with a known problem:
 * If you found a relevant thread on the [nat-user google group](https://groups.google.com/forum/#!forum/nat-user):
   please reply to that. 
 * If you found a GitHub issue:
-  please reply to that with more details (you'll need to a GitHub login) or just _like_ it to let us know you're having trouble too.
+  please reply to that with more details (you'll need a GitHub login) or just _like_ it to let us know you're having trouble too.
 * If you're not sure:
   ask a new question on the [nat-user google group](https://groups.google.com/forum/#!forum/nat-user)
   linking to what you have found.
