@@ -1,6 +1,6 @@
 ---
-title: Learn the natverse
+title: Getting started
 ---
 
-See how the natverse makes analysing neuroanatomical data easier with R. Read it [online](<link to paper>), or try another [resource](https://groups.google.com/forum/#!forum/nat-user) from the community.
-   
+To get started, take a look at our [Gallery](gallery/), explore our resources for [learning the natverse](learn/) and [get help](help/) if you have a problem. We also have a friendly [user forum](https://groups.google.com/forum/#!forum/nat-user) that you can use to request input from developers and other users.
+

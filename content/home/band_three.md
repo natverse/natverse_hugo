@@ -1,7 +1,5 @@
 ---
-title: Need help?
+title: What's in a name?
 ---
 
-First learn how to make a [reprex](/help/#reprex) then [share it](https://groups.google.com/forum/#!forum/nat-user) with others.
-
-   
+The natverse is named by analogy to the [tidyverse](https://tidyverse.org) a collection of R packages that try to enable simple and efficient general data analysis.
