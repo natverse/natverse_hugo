@@ -177,7 +177,7 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 
 <p> 
 
-Functions and data for spatial analysis and annotation of neurons from the 'FlyCircuit' collection available online at http://flycircuit.tw.
+This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.tw.
 
 </p>
 
