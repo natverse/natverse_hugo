@@ -1,9 +1,9 @@
 ## Instructions for making a vignette from a package to an article..
-# 1) First make a folder like `nat-v-xx` or any other name inside the `content/articles/` subfolder
-# 2) Copy the settings.R file to the above folder
-# 3) Set the path of the .Rmd vignette you would like to add as an article in the variable `urlpath`below
+# 1) First make a folder like `nat-v-xx` or any other name inside the `content/articles/` subfolder.
+# 2) Copy the settings.R file to the above folder.
+# 3) Set the path of the .Rmd vignette you would like to add as an article in the variable `urlpath` below.
 # 4) Modify the variable `metadata` for author name etc.
-# 5) Add jpg ending with xxx-sq.jpg, xxx-wd.jpg for use in the article favicons.
+# 5) Add jpg ending with xxx-sq.jpg for use in the article favicons.
 
 
 #Step 0: File settings here..
