@@ -8,10 +8,10 @@ categories:
 - nat
 date: "2019-02-21"
 description: |
-  `nat` version 1.8.13 is now on CRAN !
+  `nat` version 1.8.13 is now on CRAN!
 photo:
-  author: Alexander S Bates
-  url: https://raw.githubusercontent.com/natverse/natverse_hugo/dev_pages/static/images/hex-nat_logo.png
+  author: Maranda Vandergriff
+  url: https://unsplash.com/photos/o-d37kiKqqc
 slug: nat-1-8-13
 ---
 
