@@ -23,22 +23,31 @@ NBLAST examples
 
 {{< gallery dir="/images/gallery/nblast" />}} {{< load-photoswipe >}}
 
----
-Connectivity
----
-
-{{< gallery dir="/images/gallery/connectivity" />}} {{< load-photoswipe >}}
-
 
 ---
-Neuroanatomy & Geometry
+Bridging between datasets
+---
+
+{{< gallery dir="/images/gallery/bridging" />}} {{< load-photoswipe >}}
+
+
+
+---
+Volumes
+---
+
+{{< gallery dir="/images/gallery/volumes" />}} {{< load-photoswipe >}}
+
+
+---
+Neuroanatomy
 ---
 
 {{< gallery dir="/images/gallery/neuroanatomy" />}} {{< load-photoswipe >}}
 
-
 ---
-Miscellaneous
+Neurogeometry
 ---
 
-{{< gallery dir="/images/gallery/misc" />}} {{< load-photoswipe >}}
+{{< gallery dir="/images/gallery/neurogeometry" />}} {{< load-photoswipe >}}
+
