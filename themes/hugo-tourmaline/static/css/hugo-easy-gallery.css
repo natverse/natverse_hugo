@@ -11,7 +11,7 @@ Grid Layout Styles
     overflow: hidden;
     margin: 0px;
     max-width: 2048px;
-    background: #EEE;
+    /*background: #EEE;*/
 }
 .gallery .box {
     float: left;
@@ -19,14 +19,15 @@ Grid Layout Styles
     /* Default: 1 tile wide */
     width: 100%;
     padding-bottom: 100%; 
+    border: 1px dotted gray;
 }
 
 .gallery .boxInner {
    position: absolute;
-   left: 0px;
-   right: 0px;
-   top: 0px;
-   bottom: 0px;
+   left: 20px;
+   right: 20px;
+   top: 20px;
+   bottom: 20px;
    overflow: hidden;
    background: #66F;
 }
