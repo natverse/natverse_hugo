@@ -514,6 +514,8 @@ a {
   display: -webkit-flex;
   -webkit-justify-content: space-between;
   align-items: flex-start; }
+  .splitColumns .column100 {
+    width: 100%; }
   .splitColumns .column75 {
     width: 73%; }
   .splitColumns .column67 {

@@ -1,6 +1,6 @@
 ---
 title: Gallery
-layout: nocontents
+layout: gallery
 ---
 
 {{< gallery dir="/images/gallery" />}} {{< load-photoswipe >}}
