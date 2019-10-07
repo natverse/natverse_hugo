@@ -95,10 +95,10 @@ pkg_description <- function(pkg){
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/neuprintr/">
+<a href="https://natverse.github.io/neuprintr/">
 <img class="package-image" src="/images/hex-neurprintr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/neuprintr/">neuprintr</a></h3>
+<h3><a href="https://natverse.github.io/neuprintr/">neuprintr</a></h3>
 
 <p> 
 
@@ -106,7 +106,7 @@ pkg_description <- function(pkg){
 
 </p>
 
-<a href="https://jefferislab.github.io/neuprintr/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/neuprintr/" aria-hidden="true">Learn more ...</a></p>
     
 </div>
 </div>
@@ -129,10 +129,10 @@ pkg_description <- function(pkg){
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/neuromorphr/">
+<a href="https://natverse.github.io/neuromorphr/">
 <img class="package-image" src="/images/hex-neuromorphr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/neuromorphr/">neuromorphr</a></h3>
+<h3><a href="https://natverse.github.io/neuromorphr/">neuromorphr</a></h3>
 
 <p> 
 
@@ -140,7 +140,7 @@ pkg_description <- function(pkg){
 
 </p>
 
-<a href="https://jefferislab.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
@@ -164,10 +164,10 @@ pkg_description <- function(pkg){
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/nat.flybrains/">
+<a href="https://natverse.github.io/nat.flybrains/">
 <img class="package-image" src="/images/hex-natflybrains.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/nat.flybrains/">nat.flybrains</a></h3>
+<h3><a href="https://natverse.github.io/nat.flybrains/">nat.flybrains</a></h3>
 
 <p> 
 
@@ -176,7 +176,7 @@ pkg_description <- function(pkg){
 </p>
 
 
-<a href="https://jefferislab.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
