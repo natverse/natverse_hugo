@@ -43,6 +43,7 @@
 
   <div class="band second">
     <div class="bandContent">
+      
       <div class="blurb">
         <div class="tagline">
           {{ .Title }}
@@ -50,10 +51,19 @@
         <div>
           {{ .Content | markdownify }}
         </div>
-              </div>
+       </div>
+       
+       <!-- image on the right -->
       <div class="blurb">
-        <a href="https://www.biorxiv.org/content/10.1101/006353v2"><img class="bookCover" src="images/natverse_manuscript.png" alt=""></a>
+       <div class="book-cover">
+            <div class="book">
+              <a href="https://www.biorxiv.org/content/10.1101/006353v2">
+              <img src="images/natverse_manuscript2.png"/>
+              <div class="book-bg"></div>
+            </div>
+        </div>
       </div>
+      
     </div> <!-- bandContent -->
   </div> <!-- band -->
 
