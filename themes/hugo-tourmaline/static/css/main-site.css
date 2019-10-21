@@ -514,6 +514,8 @@ a {
   display: -webkit-flex;
   -webkit-justify-content: space-between;
   align-items: flex-start; }
+  .splitColumns .column100 {
+    width: 100%; }
   .splitColumns .column75 {
     width: 73%; }
   .splitColumns .column67 {
@@ -1036,7 +1038,7 @@ em {
       background-repeat: no-repeat;
       background-size: 570px 690px; }
   #homeContent .band.second {
-    height: 952px;
+    height: 600px;
     background-color: #fdeba4; }
     #homeContent .band.second .bandContent {
       padding-top: 120px;

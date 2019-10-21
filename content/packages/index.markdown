@@ -83,10 +83,10 @@ This package provide access to the API exposed by the CATMAID (C ollaborative A 
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/neuprintr/">
+<a href="https://natverse.github.io/neuprintr/">
 <img class="package-image" src="/images/hex-neurprintr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/neuprintr/">neuprintr</a></h3>
+<h3><a href="https://natverse.github.io/neuprintr/">neuprintr</a></h3>
 
 <p> 
 
@@ -94,7 +94,7 @@ Access to the neuprint connectome analysis service, including  functions to fetc
 
 </p>
 
-<a href="https://jefferislab.github.io/neuprintr/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/neuprintr/" aria-hidden="true">Learn more ...</a></p>
     
 </div>
 </div>
@@ -117,10 +117,10 @@ API access to the 'DVID' (Distributed, Versioned, Image-oriented  Dataservice).
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/neuromorphr/">
+<a href="https://natverse.github.io/neuromorphr/">
 <img class="package-image" src="/images/hex-neuromorphr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/neuromorphr/">neuromorphr</a></h3>
+<h3><a href="https://natverse.github.io/neuromorphr/">neuromorphr</a></h3>
 
 <p> 
 
@@ -128,7 +128,7 @@ Access to the NeuroMorpho online repository (version 7.7 ) for single-cell neuro
 
 </p>
 
-<a href="https://jefferislab.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/neuromorphr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
@@ -152,10 +152,10 @@ Provides tools to move between adult brain EM and light level data, emphasising 
 </div>
 
 <div class="package">
-<a href="https://jefferislab.github.io/nat.flybrains/">
+<a href="https://natverse.github.io/nat.flybrains/">
 <img class="package-image" src="/images/hex-natflybrains.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferislab.github.io/nat.flybrains/">nat.flybrains</a></h3>
+<h3><a href="https://natverse.github.io/nat.flybrains/">nat.flybrains</a></h3>
 
 <p> 
 
@@ -164,7 +164,7 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 </p>
 
 
-<a href="https://jefferislab.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/nat.flybrains/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 
 <p> 
 
-Functions and data for spatial analysis and annotation of neurons from the 'FlyCircuit' collection available online at http://flycircuit.tw.
+This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.tw.
 
 </p>
 
