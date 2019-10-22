@@ -2,40 +2,60 @@
 title: Learn the natverse
 ---
 
+To see some examples of the natverse in action take a look at our
+[Gallery](/gallery). Alternatively if you'd rather see some code right away,
+then read one of the
+introductory [articles](/news). If these look interesting, then we recommend
+reading (or at least skimming) the [natverse paper](#natverse-paper) for a more in depth introduction. You can then browse documentation for the
+core [nat package](https://natverse.github.io/nat/) and work through some
+[example code](https://github.com/jefferis/nat.examples).
+
 ---
+<a href="https://doi.org/10.1101/006353"><img src="../images/batesmanton_biorxiv2.png"" align="right" height="300" /></a>
+## natverse paper
+
+To understand what the natverse can do and how it is organised, the best
+resource is a paper currently available as a preprint: 
+[Manton, Bates et al (2019)](https://doi.org/10.1101/006353).
+This describes all the main natverse packages and how they fit together. It also
+provides numerous worked examples based on data from a range of species, including flies, fish and mice.
+
+<div style="clear:both;"></div>
+
+---
+
+## nat documentation
 <img src="nat-pkgdown.png" align="right" height="300" />
-## nat
 
-To get an idea of what the core **nat** package and friends can do:
-
-* Browse the natverse [gallery](/gallery/)
-* Skim through the Articles listed at https://natverse.github.io/nat/
-* Take a look at the [R Markdown](http://rmarkdown.rstudio.com/) reports used 
-  to generate the [figures for our NBLAST paper](http://flybrain.mrc-lmb.cam.ac.uk/si/nblast/www/paper/).
-
-When you're ready to learn more:
+To get started with some actual code, take a look at the documentation for the 
+[**nat** (NeuroAnatomy Toolbox)](https://natverse.github.io/nat) package, which is the core of the natverse:
 
 * Read the [overview package documentation](https://natverse.github.io/nat/reference/nat-package.html)
   (`?nat` in R)
 * Read the [Introduction to neurons](https://natverse.github.io/nat/articles/neurons-intro.html) article
+  - There are several other useful [articles](https://natverse.github.io/nat/articles).
 * Check out the thematically organised [function reference documentation](https://natverse.github.io/nat/reference/). 
-  * Most help pages include examples.
-* Try out sample code:
-  - [nat.examples](https://github.com/jefferis/nat.examples) has detailed 
-    examples for data sets from a range of model organisms and techniques
-  - [frulhns](https://github.com/jefferis/frulhns) analysis of sexually dimorphic circuits
-  - [NBLAST figures](https://github.com/jefferislab/NBLAST_figures/)
+  - Most help pages include examples.
+
+There is extensive sample code and data available including:
+
+* [nat.examples](https://github.com/jefferis/nat.examples) has detailed 
+  examples for data sets from a range of model organisms and techniques
+* [frulhns](https://github.com/jefferis/frulhns) analysis of sexually dimorphic circuits
+
+<div style="clear:both;"></div>
 
 ---
 ## Bridging and Mirroring registrations
-<a href="https://doi.org/10.1101/006353"><img src="../images/manton_biorxiv.png"" align="right" height="300" /></a>
+<a href="https://www.biorxiv.org/content/10.1101/006353v1?versioned=true"><img src="../images/manton_biorxiv.png"" align="right" height="300" /></a>
 
 We introduced the concept of bridging registrations between template
-brains in Manton et al 2014. This allows a huge amount of neuroanatomical
+brains in [Manton et al, bioRxiv, 2014](https://www.biorxiv.org/content/10.1101/006353v1?versioned=true).
+This allows a huge amount of neuroanatomical
 data from different labs acquired using both light and electron microscopy 
 to brought into a common space for shared analysis. The natverse provides
-efficient tools to move data from one template brain to another. This
-paper introduces and motivates our general approach with many examples.
+efficient tools to move data from one template brain to another. The original 
+version of this paper introduces and motivates our general approach with many examples.
 
 <div style="clear:both;"></div>
 
@@ -44,8 +64,12 @@ paper introduces and motivates our general approach with many examples.
 ## NBLAST
 
 NBLAST is a fast and sensitive algorithm for comparing neuron structure. It is
-described in an open access publication, Costa et al. 2016. Read the paper
+described in an open access publication, [Costa et al, Neuron (2016)](http://dx.doi.org/10.1016/j.neuron.2016.06.012). Read the paper
 to understand how the algorithm works and to see many examples of its use.
+
+You can also see the [R Markdown](http://rmarkdown.rstudio.com/) reports
+used to generate [all the figures for the paper](https://github.com/jefferislab/NBLAST_figures/).
+
 
 <div style="clear:both;"></div>
 
