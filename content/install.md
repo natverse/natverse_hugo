@@ -1,5 +1,5 @@
 ---
-title: install natverse packages
+title: Install natverse packages
 author: Gregory Jefferis
 ---
 
@@ -7,10 +7,10 @@ author: Gregory Jefferis
 
 * Install all the packages in the natverse by running:
   ```
-  if(!requireNamespace('remotes')) install.packages('remotes')
-  remotes::install_github("natverse/natverse")
+  if(!requireNamespace('remotes', quietly=TRUE)) {install.packages('remotes')}
+  remotes::install_github("natverse/natverse", dependencies=TRUE)
   ```
-* Run 
+* Run:
   ```
   library(natverse)
   ```
@@ -26,7 +26,19 @@ author: Gregory Jefferis
   # get help
   ?nat
   ```
-Learn more about the natverse at <https://natverse.github.io/>.
+  To find our more, explore our resources for [learning the natverse](learn/).
+  
+* Update:
+  ```
+  library(natverse)
+  # see what needs updating
+  natverse_update()
+  # actually update
+  natverse_update(update = TRUE)
+  # ... or if you don't want to answer any yes/no questions
+  natverse_update(update = TRUE, upgrade='always')
+  ```
+
 
 ## Troubleshooting
 
