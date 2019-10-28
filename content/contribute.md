@@ -20,9 +20,10 @@ citations are the general currency of academic credit and the best way to
 justify ongoing support of the natverse. Don't worry though, natverse
 development is currently well supported by core funding from the Medical Research Council as well as grant support from ERC and the Wellcome Trust.
 
-You can extract a generic citation for each package like so:
+You can extract a generic citation for the natverse or specific citation info
+for any of the packages like so:
 ```
-citation('nat.nblast')
+citation('natverse')
 citation('flycircuit')
 ```
 If unsure, please contact the [nat-user](https://groups.google.com/forum/#!forum/nat-user) group.
