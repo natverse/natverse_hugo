@@ -8,7 +8,9 @@ title: natverse packages
 
 <div class="package-section">
 <div class="package-section-info">
-<p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. As of natverse x.x.x, the following packages are included in the core natverse:</p>
+<p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. 
+As of natverse 0.2.0, the following packages 
+are included in the core natverse:</p>
 </div>
 
 <div class="packages">
@@ -177,7 +179,7 @@ Includes 3D brain surfaces, bridging and mirroring registrations, and neuropil s
 
 <p> 
 
-This package contains a small number of functions specifically designed to assist in the spatial analysis of neurons from the collection available online at http://flycircuit.tw.
+Functions and data for spatial analysis and annotation of neurons from the 'FlyCircuit' collection available online at http://flycircuit.tw.
 
 </p>
 
