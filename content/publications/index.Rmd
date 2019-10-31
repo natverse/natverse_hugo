@@ -3,7 +3,7 @@ title: Publications
 bibliography: natverse-papers.bib
 csl: elsevier-with-titles.csl
 nocite: | 
-  @Ding:2019aa, @Bogovic376384, @Eichler:2017aa, @Clemens:2018aa, @Jeanne:2018aa, @manton2014, @Huoviala394403, @Li605634, @Auer546507, @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @Costa:2016aa, @Panser:2016aa, @Sutcliffe:2017aa, @Chin:2018aa, @Dolan:2018aa, @Dolan404277, @Frechter336982, @Sayin259119
+  @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @manton2014, @Costa:2016aa, @Panser:2016aa, @Eichler:2017aa, @Sutcliffe:2017aa, @Bogovic376384, @Clemens:2018aa, @Jeanne:2018aa, @Huoviala394403, @Zheng:2018aa, @Chin:2018aa, @Dolan:2018aa, @Ding:2019aa, @Li605634, @Auer546507, @Dolan404277, @Frechter336982, @Sayin259119
 ---
 
 ```{r, eval=FALSE, include=FALSE}

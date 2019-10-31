@@ -9,7 +9,7 @@ title: natverse packages
 <div class="package-section">
 <div class="package-section-info">
 <p>The core natverse includes the packages that you're likely to use in analysis of neuroanatomical data. 
-As of natverse 0.2.0, the following packages 
+As of natverse 0.2.1, the following packages 
 are included in the core natverse:</p>
 </div>
 
