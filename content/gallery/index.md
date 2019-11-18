@@ -3,6 +3,8 @@ title: Architecture
 layout: gallery
 ---
 
+Note that you can find example code to generate many of the figures below at https://github.com/natverse/nat.examples.
+
 {{< gallery dir="/images/gallery/architecture" />}} {{< load-photoswipe >}}
 
 ---
