@@ -136,10 +136,10 @@ Access to the NeuroMorpho online repository (version 7.7 ) for single-cell neuro
 </div>
 
 <div class="package">
-<a href="https://jefferis.github.io/elmr/">
+<a href="https://natverse.github.io/elmr/">
 <img class="package-image" src="/images/hex-elmr.png" alt=""></img></a>
     <div class="package-info">
-<h3><a href="https://jefferis.github.io/elmr/">elmr</a></h3>
+<h3><a href="https://natverse.github.io/elmr/">elmr</a></h3>
 
 <p> 
 
@@ -148,7 +148,7 @@ Provides tools to move between adult brain EM and light level data, emphasising 
 </p>
 
 
-<a href="https://jefferis.github.io/elmr/" aria-hidden="true">Learn more ...</a></p>
+<a href="https://natverse.github.io/elmr/" aria-hidden="true">Learn more ...</a></p>
 
 </div>
 </div>
