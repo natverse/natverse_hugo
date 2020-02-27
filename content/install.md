@@ -56,6 +56,32 @@ natverse_update(update = TRUE, upgrade='always')
 ```
 ## Troubleshooting
 
+### GitHub Rate limiting
+
+Unfortunately installing the full natverse suite makes many calls to the GitHub
+API, which is rate limited unless you have a GitHub account and present a
+`GITHUB_PAT` authentication token. If you get errors like 
+
+```
+Using github PAT from envvar GITHUB_PAT
+Error: Failed to install 'unknown package' from GitHub:
+  HTTP error 401.
+  Bad credentials
+  Rate limit remaining: 56/60
+  Rate limit reset at: 2020-02-27 19:21:26 UTC
+```
+
+Then you should do
+
+```
+natmanager::check_pat()
+``` 
+
+and this will guide you through the process of obtaining a `GITHUB_PAT` and
+telling R about it. See also the illustrated guide below.
+
+### Other install issues
+
 If you have any installation issues, some general tips:
 
 * Start a clean R session
