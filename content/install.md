@@ -71,7 +71,11 @@ Still no luck?
 * ... or use it to ask for help.
 
 ## First time install - Prerequisites
-To install this package you need to have `R` and `RStudio` installed. Detailed instructions for each operating system are given below. You will also need a valid GitHub account to install the full suite of natverse packages, see  [Usage](#usage)
+To install this package you need to have `R` and `RStudio` installed. Detailed
+instructions for each operating system are given below. You will also need a
+valid GitHub account to install the full suite of natverse packages. You will be
+prompted to do this by the natmanager package, but we recommend following the
+illustrated [Step by Step Installation Guide](#step-by-step-installation-guide).
 
 ### Mac OS X
 1. Install `R` from here:
