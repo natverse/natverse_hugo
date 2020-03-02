@@ -168,9 +168,7 @@ rstudio
 
 ![](/images/installation_images/Step8.png)
 
-![](/images/installation_images/Step9.png)
-
-![](/images/installation_images/Step10.png)
+![](/images/installation_images/Step9_10.png)
 
 ![](/images/installation_images/Step11.png)
 
