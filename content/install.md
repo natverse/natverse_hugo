@@ -1,6 +1,8 @@
 ---
 title: Getting started
-author: Gregory Jefferis
+author:
+- sri
+- greg
 ---
 
 ## Installation
@@ -148,14 +150,26 @@ rstudio
 
 ## Step by Step Installation Guide
 
-![](/images/installation_images/Step_0_mod.png)
-![](/images/installation_images/Step_1_mod.png)
-![](/images/installation_images/Step_2_mod.png)
-![](/images/installation_images/Step_3a_mod.png)
-![](/images/installation_images/Step_3b_mod.png)
-![](/images/installation_images/Step_3c_mod.png)
-![](/images/installation_images/Step_4_mod.png)
-![](/images/installation_images/Step_5_mod.png)
-![](/images/installation_images/Step_6_mod.png)
-![](/images/installation_images/Step_7_mod.png)
+![](/images/installation_images/Step0.png)
+
+![](/images/installation_images/Step1.png)
+
+![](/images/installation_images/Step2.png)
+
+![](/images/installation_images/Step3.png)
+
+![](/images/installation_images/Step4.png)
+
+![](/images/installation_images/Step5_6.png)
+
+![](/images/installation_images/Step7.png)
+
+![](/images/installation_images/Step8.png)
+
+![](/images/installation_images/Step9.png)
+
+![](/images/installation_images/Step10.png)
+
+![](/images/installation_images/Step11.png)
+
 
