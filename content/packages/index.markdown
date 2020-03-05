@@ -42,7 +42,7 @@ NeuroAnatomy Toolbox (nat) enables analysis and visualisation of 3D biological i
 <h3><a href="https://natverse.github.io/nat.nblast/">nat.nblast</a></h3>
 <p> 
 
-Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST-related functions.
+Extends package 'nat' (NeuroAnatomy Toolbox) by providing a collection of NBLAST-related functions for neuronal morphology comparison (Costa et al.
 
 </p>
 
