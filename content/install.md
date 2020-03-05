@@ -60,7 +60,9 @@ natverse_update(update = TRUE, upgrade='always')
 
 Unfortunately installing the full natverse suite makes many calls to the GitHub
 API, which is rate limited unless you have a GitHub account and present a
-`GITHUB_PAT` authentication token. If you get errors like 
+`GITHUB_PAT` authentication token. The `natmanager` package will attempt to 
+use a built-in PAT if you do not have one. However, if multiple users are 
+installing the natverse simultaneously, you may get errors like 
 
 ```
 Using github PAT from envvar GITHUB_PAT
@@ -71,14 +73,14 @@ Error: Failed to install 'unknown package' from GitHub:
   Rate limit reset at: 2020-02-27 19:21:26 UTC
 ```
 
-Then you should do
+To avoid these errors, do
 
 ```
 natmanager::check_pat()
 ``` 
 
-and this will guide you through the process of obtaining a `GITHUB_PAT` and
-telling R about it. See also the illustrated guide below.
+and this will guide you through the process of obtaining your own `GITHUB_PAT`
+and telling R about it. See also the illustrated guide below.
 
 ### Other install issues
 
@@ -113,6 +115,10 @@ illustrated [Step by Step Installation Guide](#step-by-step-installation-guide).
 
 
 3. Start `RStudio` from Launchpad
+
+4. To use the rgl package for 3D visualisation you may also need to install
+the [Xquartz X11 system](https://www.xquartz.org/), which is also available by
+following links from the [CRAN Mac OS X page](https://cloud.r-project.org/bin/macosx/).
 
 ### Windows
 1. Install `R` from here:
