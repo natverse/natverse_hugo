@@ -24,8 +24,8 @@ install.packages("natmanager")
 natmanager::install('natverse')
 ```
 
-You may be prompted to make a GitHub account and personal access token 
-(GITHUB_PAT) if you have not done this previously. See the [Step by Step Installation Guide](#step-by-step-installation-guide)
+You may need to make a GitHub account and personal access token 
+(GITHUB_PAT) if you have not done this previously. See the [GitHub Rate limiting](#github-rate-limiting) and [Step by Step Installation Guide](#step-by-step-installation-guide) sections below.
 
 ## Run
 To load the core natverse and make it available in your current R session:
