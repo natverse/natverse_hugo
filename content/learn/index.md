@@ -11,12 +11,12 @@ core [nat package](https://natverse.github.io/nat/) and work through some
 [example code](https://github.com/jefferis/nat.examples).
 
 ---
-<a href="https://doi.org/10.1101/006353"><img src="../images/batesmanton_biorxiv2.png"" align="right" height="300" /></a>
+<a href="https://elifesciences.org/articles/53350"><img src="../images/natverse_manuscript4.png"" align="right" height="300"/></a>
 ## natverse paper
 
 To understand what the natverse can do and how it is organised, the best
-resource is a paper currently available as a preprint: 
-[Manton, Bates et al (2019)](https://doi.org/10.1101/006353).
+resource is a paper currently available at elife : 
+[Bates, Manton et al (2020)](https://elifesciences.org/articles/53350).
 This describes all the main natverse packages and how they fit together. It also
 provides numerous worked examples based on data from a range of species, including flies, fish and mice.
 
