@@ -3,7 +3,7 @@ title: Publications
 bibliography: natverse-papers.bib
 csl: elsevier-with-titles.csl
 nocite: | 
-  @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @manton2014, @Costa:2016aa, @Panser:2016aa, @Eichler:2017aa, @Sutcliffe:2017aa, @PrietoGodino:2017aa, @Saumweber:2018aa, @Bogovic376384, @Clemens:2018aa, @Jeanne:2018aa, @Huoviala394403, @Zheng:2018aa, @Chin:2018aa, @Dolan:2018aa, @Ding:2019aa, @Li605634, @Auer546507, @Dolan404277, @Frechter336982, @Sayin259119, @bates2019
+  @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @manton2014, @Costa:2016aa, @Panser:2016aa, @Eichler:2017aa, @Sutcliffe:2017aa, @PrietoGodino:2017aa, @Saumweber:2018aa, @Bogovic376384, @Clemens:2018aa, @Jeanne:2018aa, @Huoviala394403, @Zheng:2018aa, @Chin:2018aa, @Dolan:2018aa, @Ding:2019aa, @Li605634, @Auer546507, @Dolan404277, @Frechter336982, @Sayin259119, @bates2020
 ---
 
 ```{r, eval=FALSE, include=FALSE}
@@ -20,8 +20,8 @@ nocite: |
 If you use the natverse in your work, please cite us. Currently the most appropriate
 citations are:
 
+* General natverse, Bridging and Mirroring registrations: @bates2020 [10.7554/eLife.53350](https://doi.org/10.7554/eLife.53350)
 * NBLAST: @Costa:2016aa [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012)
-* Bridging and Mirroring registrations, General natverse: @bates2019 [10.1101/006353](https://doi.org/10.1101/006353)
 
 
 ## Publications using the natverse
