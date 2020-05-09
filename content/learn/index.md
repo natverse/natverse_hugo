@@ -56,6 +56,10 @@ data from different labs acquired using both light and electron microscopy
 to brought into a common space for shared analysis. The natverse provides
 efficient tools to move data from one template brain to another. The original 
 version of this paper introduces and motivates our general approach with many examples.
+The natverse supports a range of different registration tools and formats 
+including thin plate splines, [CMTK](https://www.nitrc.org/projects/cmtk), 
+[ANTs](http://stnava.github.io/ANTs/) and the Saalfeld lab's 
+[h5 format](https://github.com/saalfeldlab/template-building/wiki/Hdf5-Deformation-fields).
 
 <div style="clear:both;"></div>
 
