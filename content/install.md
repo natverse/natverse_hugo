@@ -42,7 +42,7 @@ plot3d(kcs20, col=type)
 # get help
 ?nat
 ```
-To find our more, explore our resources for [learning the natverse](learn/).
+To find our more, explore our resources for [learning the natverse](../learn).
   
 ## Update
 To update all natverse packages (and their dependencies):
