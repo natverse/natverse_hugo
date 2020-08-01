@@ -20,8 +20,8 @@ nocite: |
 If you use the natverse in your work, please cite us. Currently the most appropriate
 citations are:
 
-* General natverse, Bridging and Mirroring registrations: @bates2020 [10.7554/eLife.53350](https://doi.org/10.7554/eLife.53350)
-* NBLAST: @Costa:2016aa [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012)
+* General natverse, Bridging and Mirroring registrations: @bates2020 [10.7554/eLife.53350](https://doi.org/10.7554/eLife.53350) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15956725563295855656,14113925605693818488,6575900754848973462&as_sdt=5)
+* NBLAST: @Costa:2016aa [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3081482044468278939&as_sdt=5)
 
 
 ## Publications using the natverse
