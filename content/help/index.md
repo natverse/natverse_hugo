@@ -58,7 +58,7 @@ section of the tidyverse site for more information on this.
 ## General R questions 
 
 You may find that your question is more of a general R issue than a natverse
-issue. We'll always try to help, but you may also want to check out other soruces of support:
+issue. We'll always try to help, but you may also want to check out other sources of support:
 
 * [__r-help__](https://www.r-project.org/help.html): The core R project's information about
   finding help. The mailing lists have a reputation for being a bit brusque but if you ask
