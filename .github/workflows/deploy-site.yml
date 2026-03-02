@@ -23,6 +23,12 @@ jobs:
       - name: Build site
         run: hugo --gc --minify
 
+      - name: Validate CNAME
+        run: |
+          test -f public/CNAME || (echo "Missing public/CNAME" && exit 1)
+          test "$(tr -d '\r' < public/CNAME | tr -d '\n')" = "natverse.org" || \
+            (echo "public/CNAME must equal natverse.org" && cat public/CNAME && exit 1)
+
       - name: Load deploy key
         uses: webfactory/ssh-agent@v0.9.0
         with:
