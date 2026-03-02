@@ -1,45 +1,144 @@
 ---
 title: Publications
-bibliography: natverse-papers.bib
-csl: elsevier-with-titles.csl
-nocite: | 
-  @jefferis2007, @cachero2010, @yu2010, @silbering2011, @grosjean2011, @kohl2013, @manton2014, @Costa:2016aa, @Panser:2016aa, @Eichler:2017aa, @Sutcliffe:2017aa, @PrietoGodino:2017aa, @Saumweber:2018aa, @Bogovic376384, @Clemens:2018aa, @Jeanne:2018aa, @Huoviala394403, @Zheng:2018aa, @Chin:2018aa, @Dolan:2018aa, @Ding:2019aa, @Li605634, @Auer546507, @Dolan404277, @Frechter336982, @Sayin259119, @bates2020
 ---
 
-```{r, eval=FALSE, include=FALSE}
-  '`r {bibfile = here::here('content/publications/natverse-papers.bib')
-  bb=bibtex::read.bib(bibfile)
-  # resort by year
-  bb=bb[names(sort(unlist(bb$'year')))]
-  paste(paste0('@',names(bb)), collapse = ', ')}`'
+```{r publications-data, include=FALSE}
+bib_lines <- readLines("natverse-papers.bib", warn = FALSE)
+starts <- grep("^[[:space:]]*@[A-Za-z]+[[:space:]]*\\{", bib_lines)
+ends <- c(starts[-1] - 1L, length(bib_lines))
+
+extract_field <- function(block, field) {
+  pat <- regexpr(sprintf("(?i)\\b%s\\s*=\\s*", field), block, perl = TRUE)
+  if (pat[1] == -1) return(NA_character_)
+  i <- pat[1] + attr(pat, "match.length")
+  n <- nchar(block)
+  while (i <= n && substr(block, i, i) %in% c(" ", "\n", "\t")) i <- i + 1L
+  if (i > n) return(NA_character_)
+  opener <- substr(block, i, i)
+  if (opener == "{") {
+    depth <- 1L
+    j <- i + 1L
+    while (j <= n && depth > 0L) {
+      ch <- substr(block, j, j)
+      if (ch == "{") depth <- depth + 1L
+      if (ch == "}") depth <- depth - 1L
+      j <- j + 1L
+    }
+    if (depth != 0L) return(NA_character_)
+    return(substr(block, i + 1L, j - 2L))
+  }
+  if (opener == "\"") {
+    j <- i + 1L
+    while (j <= n && substr(block, j, j) != "\"") j <- j + 1L
+    if (j > n) return(NA_character_)
+    return(substr(block, i + 1L, j - 1L))
+  }
+  j <- i
+  while (j <= n && !substr(block, j, j) %in% c(",", "\n")) j <- j + 1L
+  trimws(substr(block, i, j - 1L))
+}
+
+clean_text <- function(x) {
+  if (is.na(x) || !nzchar(x)) return("")
+  x <- gsub("[\r\n]+", " ", x)
+  x <- gsub("\\\\&", "&", x, fixed = TRUE)
+  x <- gsub("[{}]", "", x)
+  x <- gsub("\\s+", " ", x)
+  trimws(x)
+}
+
+first_author_label <- function(author_field) {
+  if (is.na(author_field) || !nzchar(author_field)) return("Unknown")
+  parts <- strsplit(author_field, "\\s+and\\s+", perl = TRUE)[[1]]
+  first <- trimws(parts[1])
+  if (grepl(",", first, fixed = TRUE)) {
+    surname <- trimws(strsplit(first, ",", fixed = TRUE)[[1]][1])
+  } else {
+    tokens <- strsplit(first, "\\s+")[[1]]
+    surname <- tokens[length(tokens)]
+  }
+  if (length(parts) > 1) paste0(surname, " et al.") else surname
+}
+
+entries <- vector("list", length(starts))
+for (i in seq_along(starts)) {
+  block <- paste(bib_lines[starts[i]:ends[i]], collapse = "\n")
+  key <- sub(
+    "^[[:space:]]*@[A-Za-z]+[[:space:]]*\\{[[:space:]]*([^,]+),.*$",
+    "\\1",
+    bib_lines[starts[i]]
+  )
+  year <- suppressWarnings(as.integer(clean_text(extract_field(block, "year"))))
+  if (is.na(year)) year <- 0L
+  title <- clean_text(extract_field(block, "title"))
+  journal <- clean_text(extract_field(block, "journal"))
+  doi <- clean_text(extract_field(block, "doi"))
+  url <- clean_text(extract_field(block, "url"))
+  author <- clean_text(extract_field(block, "author"))
+  entries[[i]] <- data.frame(
+    key = key,
+    year = year,
+    title = title,
+    journal = journal,
+    doi = doi,
+    url = url,
+    author = author,
+    stringsAsFactors = FALSE
+  )
+}
+
+pubs <- do.call(rbind, entries)
+pubs <- pubs[!duplicated(pubs$key), ]
+
+# Numbering is chronological: earliest paper = 1.
+pubs <- pubs[order(pubs$year, pubs$key), ]
+pubs$num <- seq_len(nrow(pubs))
+
+# Display grouped in reverse year order (newest first).
+pubs_display <- pubs[order(-pubs$year, -pubs$num), ]
+npubs <- nrow(pubs)
 ```
- 
 
 ## Citations when using the natverse
 
 If you use the natverse in your work, please cite us. Currently the most appropriate
 citations are:
 
-* General natverse, Bridging and Mirroring registrations: @bates2020 [10.7554/eLife.53350](https://doi.org/10.7554/eLife.53350) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15956725563295855656,14113925605693818488,6575900754848973462&as_sdt=5)
-* NBLAST: @Costa:2016aa [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3081482044468278939&as_sdt=5)
+* General natverse, Bridging and Mirroring registrations: Bates et al. (2020) [10.7554/eLife.53350](https://doi.org/10.7554/eLife.53350) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15956725563295855656,14113925605693818488,6575900754848973462&as_sdt=5)
+* NBLAST: Costa et al. (2016) [10.1016/j.neuron.2016.06.012](https://doi.org/10.1016/j.neuron.2016.06.012) [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3081482044468278939&as_sdt=5)
 
 
 ## Publications using the natverse
 
-<!-- Note that for some reason I needed to use the absolute path + here in the YAML header-->
-<!-- although in this snippet, the bare filename without any path worked as expected -->
-```{r, include=FALSE}
-bb=bibtex::read.bib('natverse-papers.bib')
-cat(paste0('@',names(bb)), sep = ', ')
-npubs=length(bb)
-```
-
-
-The following `r npubs` publications used the natverse or its direct ancestor 
+The following `r npubs` publications used the natverse or its direct ancestor
 (the R [AnalysisSuite](https://github.com/jefferis/AnalysisSuite)).
-If you use a natverse package in one of your papers, then please let us know. 
+If you use a natverse package in one of your papers, then please let us know.
 You can even add a bibtex formatted record for your publication straight to the
 top of our bibliography file
 by [following this link](https://github.com/natverse/natverse_hugo/edit/dev_pages/content/publications/natverse-papers.bib). Thanks!
 
----
+```{r publications-grouped, results='asis', echo=FALSE}
+years <- unique(pubs_display$year)
+for (yr in years) {
+  cat(sprintf("### %d\n\n", yr))
+  cat("<ol>\n")
+  rows <- pubs_display[pubs_display$year == yr, ]
+  for (i in seq_len(nrow(rows))) {
+    r <- rows[i, ]
+    author_label <- first_author_label(r$author)
+    journal_txt <- if (nzchar(r$journal)) r$journal else "Unknown journal"
+    doi_link <- ""
+    if (nzchar(r$doi)) {
+      doi_link <- sprintf(" <a href=\"https://doi.org/%s\">%s</a>", r$doi, r$doi)
+    } else if (nzchar(r$url)) {
+      doi_link <- sprintf(" <a href=\"%s\">Link</a>", r$url)
+    }
+    item <- sprintf(
+      "<li value=\"%d\"><strong>%s.</strong> %s, %s (%d).%s</li>",
+      r$num, r$title, author_label, journal_txt, r$year, doi_link
+    )
+    cat(item, "\n")
+  }
+  cat("</ol>\n\n")
+}
+```

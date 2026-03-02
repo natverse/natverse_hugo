@@ -44,6 +44,16 @@ Please make sure you have checked out the `dev_pages` branch (this is actually t
 
 ### Serve the site locally 
 
+This site/theme expects an older Hugo release (`0.54.x`).
+If you have a newer Hugo installed globally, set a project-specific Hugo version in R:
+
+```r
+blogdown::install_hugo(version = "0.54.0", os = "macOS", arch = "64bit", extended = TRUE)
+options(blogdown.hugo.version = "0.54.0")
+```
+
+Then serve as usual:
+
 ```
 blogdown::serve_site()
 ```
@@ -64,6 +74,27 @@ and the site will automatically be rebuilt (via the netlify integration). You sh
 that the `dev_pages` branch has successfully rebuilt. If and only if this has happened, you can
 [merge the `dev_pages` branch into the `master` branch](https://github.com/natverse/natverse_hugo/compare/master...dev?expand=1),
 which will then trigger a rebuild of the public facing website.
+
+### Manual GitHub Pages deploy
+
+If CI deploy is unavailable, publish manually to `natverse/natverse.github.io`:
+
+```bash
+# from natverse_hugo
+./scripts/deploy_github_pages.sh ../natverse.github.io
+
+# then commit + push in the target repo
+cd ../natverse.github.io
+git add -A
+git commit -m "Update site"
+git push origin master
+```
+
+For publication count updates, re-render before deploying:
+
+```r
+Rscript scripts/update_publications.R
+```
 
 ## Acknowledgements
 
