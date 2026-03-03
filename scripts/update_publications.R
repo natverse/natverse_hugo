@@ -5,6 +5,30 @@ bib_file <- "content/publications/natverse-papers.bib"
 
 stopifnot(file.exists(index_rmd), file.exists(bib_file))
 
+ensure_utf8_locale <- function() {
+  candidates <- c("en_US.UTF-8", "C.UTF-8", "UTF-8")
+  for (loc in candidates) {
+    res <- suppressWarnings(try(Sys.setlocale("LC_CTYPE", loc), silent = TRUE))
+    if (!inherits(res, "try-error") && !is.na(res) && nzchar(res)) return(res)
+  }
+  NA_character_
+}
+
+ctype_locale <- ensure_utf8_locale()
+if (is.na(ctype_locale)) {
+  stop("Unable to set a UTF-8 locale (tried en_US.UTF-8, C.UTF-8, UTF-8); aborting to avoid encoding corruption.")
+}
+
+read_utf8_lines <- function(path) {
+  readLines(path, warn = FALSE, encoding = "UTF-8")
+}
+
+write_utf8_lines <- function(lines, path) {
+  con <- file(path, open = "w", encoding = "UTF-8")
+  on.exit(close(con), add = TRUE)
+  writeLines(enc2utf8(lines), con, useBytes = TRUE)
+}
+
 patch_missing_journal <- function(lines, doi_prefix, journal_name) {
   starts <- grep("^[[:space:]]*@", lines)
   if (length(starts) == 0) return(list(lines = lines, changed = character()))
@@ -98,7 +122,7 @@ sort_bib_entries_by_year <- function(lines) {
 }
 
 # 1) Patch known missing-journal rules for preprints/published eLife papers.
-bib_lines <- readLines(bib_file, warn = FALSE)
+bib_lines <- read_utf8_lines(bib_file)
 
 res_bio <- patch_missing_journal(bib_lines, "10\\.1101/", "bioRxiv")
 bib_lines <- res_bio$lines
@@ -109,7 +133,7 @@ bib_lines <- res_elife$lines
 # Keep bibliography in year order so rendered references stay year-ordered.
 bib_lines <- sort_bib_entries_by_year(bib_lines)
 
-writeLines(bib_lines, bib_file)
+write_utf8_lines(bib_lines, bib_file)
 
 # 2) Re-render publications fragment for Hugo.
 rmarkdown::render(
@@ -122,7 +146,7 @@ rmarkdown::render(
 
 # Ensure Hugo front matter is present in generated HTML content page.
 out_html <- file.path(dirname(index_rmd), "index.html")
-out_lines <- readLines(out_html, warn = FALSE)
+out_lines <- read_utf8_lines(out_html)
 first_nonempty <- which(nzchar(trimws(out_lines)))[1]
 has_front_matter <- !is.na(first_nonempty) && trimws(out_lines[first_nonempty]) == "---"
 if (!has_front_matter) {
@@ -133,7 +157,7 @@ if (!has_front_matter) {
     "",
     out_lines
   )
-  writeLines(out_lines, out_html)
+  write_utf8_lines(out_lines, out_html)
 }
 
 cat("Updated journals (bioRxiv):", length(res_bio$changed), "\n")

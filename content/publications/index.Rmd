@@ -3,7 +3,7 @@ title: Publications
 ---
 
 ```{r publications-data, include=FALSE}
-bib_lines <- readLines("natverse-papers.bib", warn = FALSE)
+bib_lines <- readLines("natverse-papers.bib", warn = FALSE, encoding = "UTF-8")
 starts <- grep("^[[:space:]]*@[A-Za-z]+[[:space:]]*\\{", bib_lines)
 ends <- c(starts[-1] - 1L, length(bib_lines))
 
